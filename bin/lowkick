@@ -1,0 +1,62 @@
+#!/usr/bin/env node
+
+var HELP = ['usage: lowkick [action] [options]'
+         , ''
+         , 'Simplifies running and verifying cross-browser tests on command-line.'
+         , ''
+         , 'actions:'
+         , '  revision  show the revision number LowKick recognizes'
+         , '  verify    Verify current version of the tests'
+         , '  publish   Start publishing tests.'
+         , ''
+         , 'options:'
+         , '  version   Show version number and exit'
+         , '  help      Show help'].join('\n');
+
+
+var lowkick = require('../lib/lowkick'),
+    puts = require('util').puts,
+    buildOptions = {};
+
+var opt = require('optimist'),
+    argv = opt
+    .usage('Usage: $0 [ACTION] [OPTIONS]')
+    .options('version', {})
+    .options('help', {})
+    .argv;
+
+function revision(){
+  lowkick.revision(puts);
+}
+
+function verify(){
+  
+}
+
+function publish(){
+
+}
+
+function version(){
+  throw new Error('not implemented');
+}
+
+function help(){
+  puts(HELP);
+}
+
+lowkick.quiet();
+
+var action = argv._[0];
+
+switch(action){
+  case 'revision': revision(); break;
+  case 'verify': verify(); break;
+  case 'publish': publish(); break;
+  default:
+    if(argv.version){
+      version();
+    } else {
+      help();
+    }
+}

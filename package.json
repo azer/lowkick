@@ -1,0 +1,22 @@
+{
+  "name":"lowkick",
+  "version":"0.0.1",
+  "description":"Simplifies running and verifying cross-browser tests on command-line.",
+  "author":"Azer Koculu <azer@kodfabrik.com>",
+  "keywords":["testing", "test"],
+  "directories":{ "lib": "./lib" },
+  "main":"./lib/lowkick.js",
+  "devDependencies":{
+    "highkick":"1.x"
+  },
+  "dependencies":{
+    "log4js":"0.x",
+    "node-static":"0.5",
+    "yaml":"0.2.x",
+    "optimist":"0.2.x"
+  },
+  "repository": { "type":"git",  "url" : "http://github.com/azer/lowkick.git" },
+  "scripts":{
+    "test":"node test/run.js"
+  }
+}

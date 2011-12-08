@@ -1,0 +1,13 @@
+server:
+  host: localhost
+  port: 8888
+
+browsers:
+  - Internet Explorer 9
+  - Internet Explorer 8
+  - Internet Explorer 7
+  - Internet Explorer 6
+  - Firefox 8
+  - Chrome 15
+  - Safari 3
+  - Opera 11
