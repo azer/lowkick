@@ -5,32 +5,64 @@ var HELP = ['usage: lowkick [action] [options]'
          , 'Simplifies running and verifying cross-browser tests on command-line.'
          , ''
          , 'actions:'
-         , '  revision  show the revision number LowKick recognizes'
-         , '  verify    Verify current version of the tests'
-         , '  publish   Start publishing tests.'
+         , '  revision                             Show the revision number LowKick recognizes'
+         , '  verify     <config> <results-file>   Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
+         , '  publish    <port> <host>             Start publishing tests.'
          , ''
          , 'options:'
+         , '  quiet     Hide console messages'
+         , '  verbose   Make console output more verbose'
          , '  version   Show version number and exit'
          , '  help      Show help'].join('\n');
 
 
-var lowkick = require('../lib/lowkick'),
-    puts = require('util').puts,
+var lowkick    = require('../lib/lowkick'),
+    colors     = require('colors'),
+    puts       = require('util').puts,
+    existsSync = require('path').existsSync,
     buildOptions = {};
 
-var opt = require('optimist'),
+var opt  = require('optimist'),
     argv = opt
-    .usage('Usage: $0 [ACTION] [OPTIONS]')
-    .options('version', {})
-    .options('help', {})
-    .argv;
+      .usage('Usage: $0 [ACTION] [OPTIONS]')
+      .options('verbose', {})
+      .options('quiet', {})
+      .options('version', {})
+      .options('help', {})
+      .argv;
 
 function revision(){
   lowkick.revision(puts);
 }
 
 function verify(){
-  
+  var configFilename  = argv._[1],
+      resultsFilename = argv._[2];
+
+  configFilename && lowkick.config.filename(configFilename);
+  resultsFilename && lowkick.report.filename(resultsFilename);
+
+  lowkick.verify(function(error, results){
+    if(error){
+      lowkick.logging.error('An error occured: ', error);
+    }
+
+    var passed   = results.passed.join(', '),
+        failed   = results.failed.join(', '),
+        untested = results.untested.join(', ');
+
+    puts((untested ? ( 'Not Tested: '.bold + untested + '\n' ).blue : '')
+         + ( passed ? ( 'Passed: '.bold + passed + '\n' ).green : '')
+         + ( failed ? ( 'Failed: '.bold + failed + '\n' ).red : '' )
+         + '\n'
+         + 'Revision: '.bold
+         + results.revision
+         + '\nResults Source: '.bold
+         + lowkick.report.filename()
+         + '\nConfig: '.bold
+         + lowkick.config.filename()
+        );
+  });
 }
 
 function publish(){
@@ -45,9 +77,14 @@ function help(){
   puts(HELP);
 }
 
+var action = argv._[0];
+
+
 lowkick.quiet();
 
-var action = argv._[0];
+if(argv.verbose) {
+  lowkick.verbose();
+}
 
 switch(action){
   case 'revision': revision(); break;

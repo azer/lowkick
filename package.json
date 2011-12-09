@@ -13,7 +13,8 @@
     "log4js":"0.x",
     "node-static":"0.5",
     "yaml":"0.2.x",
-    "optimist":"0.2.x"
+    "optimist":"0.2.x",
+    "color":"0.x"
   },
   "repository": { "type":"git",  "url" : "http://github.com/azer/lowkick.git" },
   "scripts":{

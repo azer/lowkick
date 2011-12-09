@@ -11,6 +11,8 @@ function testConfig(callback){
   config(function(error, config){
     if(error) return callback(error);
 
+    assert.equal(config.revision, '0.0.0');
+
     assert.equal(config.server.host, 'localhost');
     assert.equal(config.server.port, '8888');
     
@@ -23,9 +25,29 @@ function testConfig(callback){
 }
 
 function testGetRevision(callback){
+  lowkick.revision('');
   lowkick.revision(function(rev){
-    assert.equal(rev, '0.0.1');
-    callback();
+    try {
+      assert.equal(rev, '0.0.0');
+    } catch(assertionError){
+      return callback(assertionError);
+    }
+    
+    lowkick.config(function(err, configdoc){
+      delete configdoc.revision;
+      
+      lowkick.revision(function(rev){
+        try {
+          assert.equal(rev, '0.0.1');
+        } catch(assertionError){
+          return callback(assertionError);
+        }
+
+        callback();
+      });
+
+    });
+
   });
 }
 
@@ -76,39 +98,53 @@ function testVerify(callback){
     }
   });
 
+  lowkick.revision('0.0.0');
+
   report.save(function(error){
     if(error) return callback(error);
     
     lowkick.verify(function(error, results){
       if(error) return callback(error);
 
-      assert.ok(results.ok);
-      assert.ok(!results.fail);
-      assert.equal(results.passed.length, 8);
-      assert.equal(results.failed.length, 0);
+      try {
+        assert.ok(results.ok);
+        assert.ok(!results.fail);
+        assert.equal(results.passed.length, 8);
+        assert.equal(results.failed.length, 0);
 
-      report.doc().revision = true;
+        report.doc().revision = true;
+      } catch(assertionError) {
+        callback(assertionError);
+      }
 
       lowkick.verify(function(error, results){
         if(error) return callback(error);
 
-        assert.ok(results.fail);
-        assert.ok(!results.ok);
+        try {
+          assert.ok(results.fail);
+          assert.ok(!results.ok);
 
-        assert.equal(results.passed.length, 0);
-        assert.equal(results.failed.length, 0);
+          assert.equal(results.passed.length, 0);
+          assert.equal(results.failed.length, 0);
 
-        report.doc().revision = '0.0.0';
-        report.doc().browsers['Internet Explorer 6'] = false;        
+          report.doc().revision = '0.0.0';
+          report.doc().browsers['Internet Explorer 6'] = false;        
+        } catch(assertionError) {
+          callback(assertionError);
+        }
         
         lowkick.verify(function(error, results){
           if(error) return callback(error);
 
-          assert.equal(results.passed.length, 7);
-          assert.equal(results.failed.length, 1);
+          try {
+            assert.equal(results.passed.length, 7);
+            assert.equal(results.failed.length, 1);
 
-          assert.equal(results.failed[0], 'Internet Explorer 6');
-          assert.ok(results.fail);
+            assert.equal(results.failed[0], 'Internet Explorer 6');
+            assert.ok(results.fail);
+          } catch(assertionError) {
+            callback(assertionError);
+          }
           
           callback();
         });
