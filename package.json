@@ -7,14 +7,18 @@
   "directories":{ "lib": "./lib" },
   "main":"./lib/lowkick.js",
   "devDependencies":{
-    "highkick":"1.x"
+    "highkick":"1.x",
+    "mkdirp":"0.x",
+    "rimraf":"1.x"
   },
   "dependencies":{
     "log4js":"0.x",
     "node-static":"0.5",
     "yaml":"0.2.x",
     "optimist":"0.2.x",
-    "color":"0.x"
+    "color":"0.x",
+    "connect":"1.x.x",
+    "mustache":"0.x.x"
   },
   "repository": { "type":"git",  "url" : "http://github.com/azer/lowkick.git" },
   "scripts":{

@@ -2,7 +2,12 @@ server:
   host: localhost
   port: 8888
 
+name: "LowKick Example"
 revision: "0.0.0"
+
+script-dirs:
+  - /tmp/lowkick/1
+  - /tmp/lowkick/2
 
 browsers:
   - Internet Explorer 9

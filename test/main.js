@@ -1,10 +1,20 @@
-var assert = require('assert'),
-    highkick = require('highkick'),
-    config = require('../lib/config'),
-    report = require('../lib/report'),
-    lowkick = require('../lib/lowkick'),
-    readFileSync = require('fs').readFileSync,
-    exec = require('child_process').exec;
+var assert        = require('assert'),
+    highkick      = require('highkick'),
+    fs            = require('fs'),
+    mkdirp        = require('mkdirp'),
+    rimraf        = require('rimraf'),
+
+    exec          = require('child_process').exec,
+    join          = require('path').join,
+
+    config        = require('../lib/config'),
+    report        = require('../lib/report'),
+    lowkick       = require('../lib/lowkick'),
+
+    writeFileSync = fs.writeFileSync,
+    readFileSync  = fs.readFileSync;
+
+var tmp = join(__dirname, 'tmp');
 
 function testConfig(callback){
   config.filename('.example_config');
@@ -156,6 +166,40 @@ function testVerify(callback){
 
 }
 
+function testUserScripts(callback){
+
+  rimraf(tmp, {}, function(error){
+    if(error) return callback(error);
+  
+    mkdirp.sync(tmp+'/1', 0755);
+    mkdirp.sync(tmp+'/2', 0755);
+    mkdirp.sync(tmp+'/2/3', 0755);
+
+    writeFileSync(tmp+'/1/a.js', 'a');
+    writeFileSync(tmp+'/1/b', 'b');
+    writeFileSync(tmp+'/2/c', 'c');
+    writeFileSync(tmp+'/2/3/d.js', 'd');
+    writeFileSync(tmp+'/2/3/e.js', 'e');
+
+    lowkick.userscripts(function(error, scripts){
+      if(error) return callback(error);
+
+      try {
+
+        assert.equal(scripts.length, 3);
+        assert.equal(scripts[0], 'a.js');
+        assert.equal(scripts[1], 'd.js');
+        assert.equal(scripts[2], 'e.js');
+
+      } catch(assertionError) {
+        return callback(assertionError);
+      }
+
+    });
+
+  });
+}
+
 module.exports = {
   'testConfig': testConfig,
   'testGitDescription': testGitDescription,
@@ -163,5 +207,6 @@ module.exports = {
   'testVerify': testVerify,
   'testPackageVersion': testPackageVersion,
   'testGetRevision': testGetRevision,
-  'testSetRevision': testSetRevision
+  'testSetRevision': testSetRevision,
+  'testUserScripts': testUserScripts
 }
