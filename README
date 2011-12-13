@@ -3,7 +3,7 @@ It aims to accomplish following tasks:
 
   - Provide a command-line API to run cross-platform JS tests, to verify if specified web project has been tested at target environment
   - Build NodeJS tests for other platforms (See http://github.com/azer/onejs)
-  - Run NodeJS tests upon a web server, providing them an API to save the result of the tests. 
+  - Run NodeJS tests upon a web server, providing them an API to save the results of the tests. 
 
 Status: Under Development
 
