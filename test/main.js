@@ -14,7 +14,7 @@ var assert        = require('assert'),
     writeFileSync = fs.writeFileSync,
     readFileSync  = fs.readFileSync;
 
-var tmp = join(__dirname, 'tmp');
+var tmp = join(/*__dirname, '../', */'tmp');
 
 function testConfig(callback){
   config.filename('.example_config');
@@ -185,12 +185,8 @@ function testUserScripts(callback){
       if(error) return callback(error);
 
       try {
-
-        assert.equal(scripts.length, 3);
-        assert.equal(scripts[0], 'a.js');
-        assert.equal(scripts[1], 'd.js');
-        assert.equal(scripts[2], 'e.js');
-
+        assert.arrayContent(scripts, [tmp+'/1/a.js', tmp+'/2/3/d.js', tmp+'/2/3/e.js']);
+        callback();
       } catch(assertionError) {
         return callback(assertionError);
       }

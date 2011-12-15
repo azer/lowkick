@@ -5,9 +5,9 @@ server:
 name: "LowKick Example"
 revision: "0.0.0"
 
-script-dirs:
-  - /tmp/lowkick/1
-  - /tmp/lowkick/2
+scripts:
+  - tmp/1
+  - tmp/2
 
 browsers:
   - Internet Explorer 9
