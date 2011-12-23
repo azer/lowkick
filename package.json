@@ -12,7 +12,10 @@
     "rimraf":"1.x"
   },
   "dependencies":{
+    "colors":"0.x",
     "log4js":"0.x",
+    "combiner":"1.x",
+    "functools":"1.x",
     "node-static":"0.5",
     "yaml":"0.2.x",
     "optimist":"0.2.x",
