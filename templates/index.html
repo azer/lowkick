@@ -2,9 +2,65 @@
 <html>
   <head>
     <title>{{ name }} {{ revision }} - LowKick</title>
-    <script type="text/javascript" src="lowkick.js"></script>
+    <script type='text/javascript'>
+    </script>
+
+    <style type='text/css'>
+      html, body { margin:0; padding:20px; background:#111; font:14px Arial, sans-serif; color:#eee; }
+
+      h1 { margin:20px 20px 40px 0px; font:bold 32px serif; color:#ffcc00; }
+      h1 span, h2 span { background:#181818; padding:5px 15px; }
+      h1 span { background:#aa0000; }
+
+      h2 { margin-top:20px; color:#ffff00; font:bold 16px Arial, sans-serif; margin-bottom:0; }
+
+      .left { width:400px; float:left; }
+      .right { width:400px; float:right; }
+
+      .section { margin-top:2px; width:600px; padding:5px; background:#181818; color:#ccc; }
+
+      a { text-decoration:none; }
+      a:hover { color:#ffcc00; text-decoration:underline; }
+
+      .scripts {  }
+      .scripts li { line-height:18px; }
+      .scripts .url { color: #333; }
+      .scripts .url:hover { color: #888; }
+
+    </style>
+
     {{#scripts}}
-    <script type="text/javascript" src="{{ . }}"></script>
+    <script type="text/javascript" src="static/{{ . }}"></script>
     {{/scripts}}
   </head>
+  <body>
+    <h1><span>{{ name }} {{ revision }}</span></h1>
+
+    <div class='section'>
+      <script>
+        document.write(navigator.userAgent);
+      </script>
+    </div>
+
+    <h2><span>Loaded Scripts</span></h2>
+    <div class='section'>
+      <ul class='scripts'>
+        {{#scripts}}
+        <li>{{ . }} <a href="/static/{{ . }}" class='url'>/static/{{ . }}</a></li>
+        {{/scripts}}
+        <ul>
+    </div>
+
+    <h2><span>Config ({{ configFilename }})</span></h2>
+    <div class='section'>
+      <pre>{{ config }}</pre>
+    </div>
+
+    <h2><span>Results ({{ resultsFilename }})</span></h2>
+    <div class='section'>
+      <pre>{{ results }}</pre>
+    </div>
+
+
+  </body>
 </html>
