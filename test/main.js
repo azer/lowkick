@@ -7,14 +7,23 @@ var assert        = require('assert'),
     exec          = require('child_process').exec,
     join          = require('path').join,
 
-    config        = require('../lib/config'),
-    report        = require('../lib/report'),
+
     lowkick       = require('../lib/lowkick'),
+    config        = lowkick.config,
+    report        = lowkick.report,
+    userscripts   = lowkick.userscripts,
+    revision      = lowkick.revision,
+    verify        = lowkick.verify,
 
     writeFileSync = fs.writeFileSync,
     readFileSync  = fs.readFileSync;
 
 var tmp = join(/*__dirname, '../', */'tmp');
+
+function init(options, callback){
+  config.filename('.example_config');
+  callback();
+}
 
 function testConfig(callback){
   config.filename('.example_config');
@@ -26,27 +35,27 @@ function testConfig(callback){
     assert.equal(config.server.host, 'localhost');
     assert.equal(config.server.port, '8888');
     
-    assert.equal(config.browsers.length, 8);
-    assert.equal(config.browsers[0], 'Internet Explorer 9');
-    assert.equal(config.browsers[7], 'Opera 11');
+    assert.equal(config.environ.length, 8);
+    assert.equal(config.environ[0], 'Internet Explorer 9');
+    assert.equal(config.environ[7], 'Opera 11');
     
     callback();
   });
 }
 
 function testGetRevision(callback){
-  lowkick.revision('');
-  lowkick.revision(function(rev){
+  revision('');
+  revision(function(rev){
     try {
       assert.equal(rev, '0.0.0');
     } catch(assertionError){
       return callback(assertionError);
     }
     
-    lowkick.config(function(err, configdoc){
+    config(function(err, configdoc){
       delete configdoc.revision;
       
-      lowkick.revision(function(rev){
+      revision(function(rev){
         try {
           assert.equal(rev, '0.0.1');
         } catch(assertionError){
@@ -72,7 +81,7 @@ function testGitDescription(callback){
   exec('git describe', function(_error, _stdout, _stderr){
     !_error && _stderr && ( _error = new Error(_stderr) );
 
-    lowkick.gitDescription(function(error, rev){
+    revision.gitDescription(function(error, rev){
       if(error && error.message != _error.message) return callback(error);
       assert.equal(rev, _stdout);
       callback();
@@ -81,12 +90,18 @@ function testGitDescription(callback){
 }
 
 function testReport(callback){
-  highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, callback);
+  highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, function(error, result){
+    if(result.fail>0){
+      return callback(new Error('Report tests were failed.'));
+    }
+
+    callback();
+  });
 }
 
 function testPackageVersion(callback){
   var _version = JSON.parse( readFileSync('./package.json') ).version;
-  lowkick.packageVersion(function(error, version){
+  revision.packageVersion(function(error, version){
     if(error) return callback(error);
     assert.equal(_version, version);
     callback();
@@ -96,7 +111,7 @@ function testPackageVersion(callback){
 function testVerify(callback){
   report.doc({
     'revision':'0.0.0',
-    'browsers':{
+    'environ':{
       'Internet Explorer 6':true,
       'Internet Explorer 7':true,
       'Internet Explorer 8':true,
@@ -108,12 +123,12 @@ function testVerify(callback){
     }
   });
 
-  lowkick.revision('0.0.0');
+  revision('0.0.0');
 
   report.save(function(error){
     if(error) return callback(error);
-    
-    lowkick.verify(function(error, results){
+
+    verify(function(error, results){
       if(error) return callback(error);
 
       try {
@@ -122,12 +137,12 @@ function testVerify(callback){
         assert.equal(results.passed.length, 8);
         assert.equal(results.failed.length, 0);
 
-        report.doc().revision = true;
+        report.doc().revision = undefined;
       } catch(assertionError) {
         callback(assertionError);
       }
 
-      lowkick.verify(function(error, results){
+      verify(function(error, results){
         if(error) return callback(error);
 
         try {
@@ -138,11 +153,11 @@ function testVerify(callback){
           assert.equal(results.failed.length, 0);
 
           report.doc().revision = '0.0.0';
-          report.doc().browsers['Internet Explorer 6'] = false;        
+          report.doc().environ['Internet Explorer 6'] = false;
         } catch(assertionError) {
           callback(assertionError);
         }
-        
+
         lowkick.verify(function(error, results){
           if(error) return callback(error);
 
@@ -155,7 +170,7 @@ function testVerify(callback){
           } catch(assertionError) {
             callback(assertionError);
           }
-          
+
           callback();
         });
 
@@ -167,7 +182,6 @@ function testVerify(callback){
 }
 
 function testUserScripts(callback){
-
   rimraf(tmp, {}, function(error){
     if(error) return callback(error);
   
@@ -182,6 +196,7 @@ function testUserScripts(callback){
     writeFileSync(tmp+'/2/3/e.js', 'e');
 
     lowkick.userscripts(function(error, scripts){
+
       if(error) return callback(error);
 
       try {
@@ -197,6 +212,7 @@ function testUserScripts(callback){
 }
 
 module.exports = {
+  'init': init,
   'testConfig': testConfig,
   'testGitDescription': testGitDescription,
   'testReport': testReport,

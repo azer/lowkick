@@ -9,7 +9,7 @@ scripts:
   - tmp/1
   - tmp/2
 
-browsers:
+environ:
   - Internet Explorer 9
   - Internet Explorer 8
   - Internet Explorer 7

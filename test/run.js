@@ -13,5 +13,4 @@ lowkick.quiet();
 
 highkick({ module:require('./main'), name:'  main', ordered:true }, function(error, result){
   if(error) throw error;
-
 });

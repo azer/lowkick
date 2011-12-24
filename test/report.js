@@ -1,11 +1,19 @@
-var assert = require('assert'),
-    config = require('../lib/config'),
-    report = require('../lib/report'),
-    fs     = require('fs'),
-    exists = require('path').existsSync;
+var assert  = require('assert'),
+    config  = require('../lib/config'),
+    report  = require('../lib/report'),
+    fs      = require('fs'),
+    exists  = require('path').existsSync,
+    lowkick;
+
 
 function init(options, callback){
-  report.reset(callback);
+  if(!lowkick) {
+    lowkick = require('../lib/lowkick');
+  }
+
+  report.reset(function(){
+    callback();
+  });
 }
 
 function testSave(callback){
@@ -34,13 +42,30 @@ function testResults(callback){
 }
 
 function testOK(callback){
-  report.ok({ 'browser':'Firefox', 'version':9, 'os':'Linux' }, function(error){
+  report.ok(['linux', 'firefox'], function(error){
     if(error) return callback(error);
     
     report.results(function(error, results){
       if(callback) return callback(error);
 
-      assert.ok(results.Linux.Firefox['9']);
+      assert.ok(results.environ.linux);
+      assert.ok(results.environ.firefox);
+      callback();
+    });
+    
+  });
+}
+
+function testSetResult(callback){
+  report.setResult(['chrome', 'v8', 'osx'], function(error){
+    if(error) return callback(error);
+
+    report.results(function(error, results){
+      if(callback) return callback(error);
+
+      assert.ok(results.environ.chrome);
+      assert.ok(results.environ.v8);
+      assert.ok(results.environ.osx);
       callback();
     });
     
@@ -48,20 +73,29 @@ function testOK(callback){
 }
 
 function testReset(callback){
-  report.reset(function(){
-    assert.equal(fs.readFileSync(report.filename()).toString(), '{}');
-    callback();
+  lowkick.revision(function(revision){
+    report.reset(function(){
+      var doc = fs.readFileSync(report.filename()).toString().replace(/(\n|\s)+/g,' '),
+          equalTo = '{ "revision": "'+revision+'", "environ": {} }',
+          orEqualTo = '{ "environ": {}, "revision": "'+revision+'" }';
+
+      assert.ok(doc == equalTo || doc == orEqualTo );
+      callback();
+    });
+
   });
 }
 
 function testFail(callback){
-  report.fail({ 'browser':'Firefox', 'version':9, 'os':'Linux' }, function(error){
+  report.fail(['node', 'v8'], function(error){
     if(error) return callback(error);
     
     report.results(function(error, results){
       if(callback) return callback(error);
 
-      assert.ok(!results.Linux.Firefox['9']);
+      assert.ok(!results.environ.node);
+      assert.ok(!results.environ.v8);
+
       callback();
     });
     
@@ -75,10 +109,12 @@ function testDoc(callback){
 }
 
 module.exports = {
-  'testDoc':testDoc,
-  'testSave':testSave,
-  'testFail':testFail,
-  'testOK':testOK,
-  'testReset':testReset,
-  'testResults':testResults
+  'init': init,
+  'testDoc': testDoc,
+  'testSave': testSave,
+  'testFail': testFail,
+  'testOK': testOK,
+  'testSetResult': testSetResult,
+  'testReset': testReset,
+  'testResults': testResults
 }
