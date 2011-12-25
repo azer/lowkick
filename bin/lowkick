@@ -46,28 +46,7 @@ function verify(){
   configFilename && lowkick.config.filename(configFilename);
   resultsFilename && lowkick.report.filename(resultsFilename);
 
-  lowkick.verify(function(error, results){
-    if(error){
-      lowkick.logging.error('An error occured: ', error);
-      throw error;
-    }
-
-    var passed   = results.passed.join(', '),
-        failed   = results.failed.join(', '),
-        untested = results.untested.join(', ');
-
-    puts((untested ? ( 'Not Tested: '.bold + untested + '\n' ).blue : '')
-         + ( passed ? ( 'Passed: '.bold + passed + '\n' ).green : '')
-         + ( failed ? ( 'Failed: '.bold + failed + '\n' ).red : '' )
-         + '\n'
-         + 'Revision: '.bold
-         + results.revision
-         + '\nResults Source: '.bold
-         + lowkick.report.filename()
-         + '\nConfig: '.bold
-         + lowkick.config.filename()
-        );
-  });
+  lowkick.cli.verify();
 }
 
 function publish(){
@@ -80,13 +59,7 @@ function publish(){
 
   !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
 
-  lowkick.config(function(error, config){
-    
-    if(error) throw error;
-
-    server.start({ 'port': config.server && config.server.port, 'host': config.server && config.server.host });
-
-  });
+  lowkick.cli.publish();
 }
 
 function version(){

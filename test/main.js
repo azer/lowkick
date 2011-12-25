@@ -89,16 +89,6 @@ function testGitDescription(callback){
   });
 }
 
-function testReport(callback){
-  highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, function(error, result){
-    if(result.fail>0){
-      return callback(new Error('Report tests were failed.'));
-    }
-
-    callback();
-  });
-}
-
 function testPackageVersion(callback){
   var _version = JSON.parse( readFileSync('./package.json') ).version;
   revision.packageVersion(function(error, version){
@@ -211,6 +201,30 @@ function testUserScripts(callback){
   });
 }
 
+function testReport(callback){
+  highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, function(error, result){
+    if(result.fail>0){
+      return callback(new Error('Report tests were failed.'));
+    }
+
+    callback();
+  });
+}
+
+function testServer(callback){
+  var server = require('./server');
+  highkick({ module:server, name:'server', 'silent': true, 'ordered': true }, function(error, result){
+    if(result.fail>0){
+      server.end(function(){
+        callback(new Error('Server tests were failed.'));
+      });
+      return;
+    }
+
+    server.end(callback);
+  });
+}
+
 module.exports = {
   'init': init,
   'testConfig': testConfig,
@@ -220,5 +234,6 @@ module.exports = {
   'testPackageVersion': testPackageVersion,
   'testGetRevision': testGetRevision,
   'testSetRevision': testSetRevision,
-  'testUserScripts': testUserScripts
+  'testUserScripts': testUserScripts,
+  'testServer': testServer
 }

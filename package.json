@@ -1,29 +1,31 @@
 {
-  "name":"lowkick",
-  "version":"0.0.1",
-  "description":"Simplifies running and verifying cross-browser tests on command-line.",
-  "author":"Azer Koculu <azer@kodfabrik.com>",
+  "name": "lowkick",
+  "version": "0.0.1",
+  "description": "Simplifies running and verifying cross-browser tests on command-line.",
+  "author": "Azer Koculu <azer@kodfabrik.com>",
   "keywords":["testing", "test"],
   "directories":{ "lib": "./lib" },
-  "main":"./lib/lowkick.js",
+  "main": "./lib/lowkick.js",
   "devDependencies":{
-    "highkick":"1.x",
-    "mkdirp":"0.x",
-    "rimraf":"1.x"
+    "highkick": "1.x",
+    "mkdirp": "0.x",
+    "rimraf": "1.x",
+    "request": "2.x",
+    "forever": "0.x"
   },
   "dependencies":{
-    "colors":"0.x",
-    "log4js":"0.x",
-    "combiner":"1.x",
-    "functools":"1.x",
-    "yaml":"0.2.x",
-    "optimist":"0.2.x",
-    "color":"0.x",
-    "connect":"1.x.x",
-    "mustache":"0.x.x"
+    "colors": "0.x",
+    "log4js": "0.x",
+    "combiner": "1.x",
+    "functools": "1.x",
+    "yaml": "0.2.x",
+    "optimist": "0.2.x",
+    "color": "0.x",
+    "connect": "1.x.x",
+    "mustache": "0.x.x"
   },
-  "repository": { "type":"git",  "url" : "http://github.com/azer/lowkick.git" },
+  "repository": { "type": "git",  "url" : "http://github.com/azer/lowkick.git" },
   "scripts":{
-    "test":"node test/run.js"
+    "test": "node test/run.js"
   }
 }

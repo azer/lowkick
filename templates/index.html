@@ -30,7 +30,7 @@
     </style>
 
     {{#scripts}}
-    <script type="text/javascript" src="static/{{ . }}"></script>
+    <script type="text/javascript" src="/scripts/{{ . }}"></script>
     {{/scripts}}
   </head>
   <body>
@@ -46,7 +46,7 @@
     <div class='section'>
       <ul class='scripts'>
         {{#scripts}}
-        <li>{{ . }} <a href="/static/{{ . }}" class='url'>/static/{{ . }}</a></li>
+        <li>{{ . }} <a href="/scripts/{{ . }}" class='url'>/static/{{ . }}</a></li>
         {{/scripts}}
         <ul>
     </div>
