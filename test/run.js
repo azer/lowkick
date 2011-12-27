@@ -1,6 +1,6 @@
 var lowkick  = require('../lib/lowkick'),
     highkick = require('highkick'),
-    rimraf   = require('rimraf'),
+    unlinkSync   = require('fs').unlinkSync,
     assert   = require('assert');
 
 assert.arrayContent = function assertContent(a, b){
@@ -13,4 +13,5 @@ lowkick.quiet();
 
 highkick({ module:require('./main'), name:'  main', ordered:true }, function(error, result){
   if(error) throw error;
+  unlinkSync('test/results-tmp.json');
 });

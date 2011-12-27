@@ -6,16 +6,18 @@ var assert   = require('assert'),
     report   = require('../lib/report'),
     logging  = require('../lib/logging'),
     revision = require('../lib/revision');
-    
+
+const CONN_TIMEOUT = 2000;
 
 var process;
 
 function init(options, callback){
   if(process){
-    process.stop();
+    callback();
+    return;
   }
 
-  config.filename('test/.config');
+  config.filename('test/.tmp');
 
   report.reset(function(error){
 
@@ -26,22 +28,28 @@ function init(options, callback){
       return;
     }
   
-    process = forever.start(['./bin/lowkick', 'publish', 'test/.config'], {
+    process = forever.start(['./bin/lowkick', 'publish', 'test/.tmp'], {
       silent: true
     });
-
 
     process.on('start', function(process, data){
 
       config(function(error, configdoc){
-        if(error) return callback(error);
+        if(error){
+          callback(error);
+          return;
+        }
 
-        var url = 'http://' + configdoc.server.host + ':' + configdoc.server.port;
+        var url = 'http://' + configdoc.server.host + ':' + configdoc.server.port,
+            startTS = +(new Date);
 
         (function waitServerToStart(){
           request.get(url, function(error){
-            if(error) {
-              setTimeout(waitServerToStart, 100); 
+            if(error && +(new Date)-startTS<CONN_TIMEOUT) {
+              setTimeout(waitServerToStart, 100);
+              return;
+            } else if(error){
+              callback(new Error('Connection timeout. ('+(+(new Date)-startTS)+' ms)'));
               return;
             }
 
@@ -55,10 +63,34 @@ function init(options, callback){
   });
 }
 
+function end(callback){
+  process.stop();
+  callback();
+}
+
+function get(path, callback){
+
+  config(function(error, configdoc){
+    if(error){ 
+      callback(error);
+      return;
+    }
+
+    request.get({
+      'headers': { 'content-type' : 'application/json' },
+      'url': 'http://' + join(configdoc.server.host+':'+configdoc.server.port, 'api', path)
+    }, callback);
+
+  });
+}
+
 function post(path, body, callback){
 
   config(function(error, configdoc){
-    if(error) return callback(error);
+    if(error) {
+      callback(error);
+      return;
+    }
 
     request.post({
       'headers': { 'content-type' : 'application/json' },
@@ -70,10 +102,6 @@ function post(path, body, callback){
   });
 }
 
-function end(callback){
-  process.stop();
-  callback();
-}
 
 function testSet(callback){
   post('set', { 'v8': true, 'node': true, 'ie': false }, function(error, response, body){
@@ -85,7 +113,10 @@ function testSet(callback){
     report.doc(undefined);
 
     report.results(function(error, results){
-      if(error) return callback(error);
+      if(error){ 
+        callback(error);
+        return;
+      }
 
       assert.ok(results.environ.v8);
       assert.ok(results.environ.node);
@@ -101,7 +132,8 @@ function testOk(callback){
   post('ok', { 'environ': ['node', 'v8'] }, function(error, response, body){
     if(error){ 
       logging.error(error);
-      return callback(error);
+      callback(error);
+      return;
     }
 
     report.doc(undefined);
@@ -122,13 +154,17 @@ function testFail(callback){
   post('fail', { 'environ': ['ie6', 'ie7', 'ie8'] }, function(error, response, body){
     if(error){ 
       logging.error(error);
-      return callback(error);
+      callback(error);
+      return;
     }
 
     report.doc(undefined);
 
     report.results(function(error, results){
-      if(error) return callback(error);
+      if(error) {
+        callback(error);
+        return;
+      }
 
       assert.equal(results.environ.ie8, false);
       assert.equal(results.environ.ie7, false);
@@ -140,10 +176,51 @@ function testFail(callback){
   });
 }
 
+function testResults(callback){
+  post('ok', { 'environ': ['node', 'v8'] }, function(error, response, body){
+    if(error){ 
+      logging.error(error);
+      callback(error);
+      return;
+    }
+
+    body = JSON.parse(body);
+
+    get('results', function(error, response, body){
+
+      if(error){
+        logging.error(error);
+        callback(error);
+        return;
+      }
+
+      body = JSON.parse(body);
+
+      try {
+
+        assert.ok(body.environ.node);
+        assert.ok(body.environ.v8);
+
+      } catch(assertionError){
+        callback(assertionError);
+        return;
+      }
+
+      revision(function(rev){
+        assert.equal(rev, body.revision);
+        callback();
+      });
+
+    });
+
+  });
+}
+
 module.exports = {
   'init': init,
   'end': end,
   'testSet': testSet,
   'testOk': testOk,
-  'testFail': testFail
+  'testFail': testFail,
+  'testResults': testResults
 };

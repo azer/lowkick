@@ -2,7 +2,10 @@ var assert  = require('assert'),
     config  = require('../lib/config'),
     report  = require('../lib/report'),
     fs      = require('fs'),
-    exists  = require('path').existsSync,
+    path    = require('path'),
+    exists  = path.existsSync,
+    join    = path.join,
+    dirname = path.dirname,
     lowkick;
 
 
@@ -14,6 +17,11 @@ function init(options, callback){
   report.reset(function(){
     callback();
   });
+}
+
+function testFilename(callback){
+  assert.equal('test/results-tmp.json', report.filename());
+  callback();
 }
 
 function testSave(callback){
@@ -110,6 +118,7 @@ function testDoc(callback){
 
 module.exports = {
   'init': init,
+  'testFilename': testFilename,
   'testDoc': testDoc,
   'testSave': testSave,
   'testFail': testFail,

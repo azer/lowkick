@@ -18,26 +18,27 @@ var assert        = require('assert'),
     writeFileSync = fs.writeFileSync,
     readFileSync  = fs.readFileSync;
 
-var tmp = join(/*__dirname, '../', */'tmp');
-
 function init(options, callback){
-  config.filename('.example_config');
-  callback();
+  config.filename('test/.tmp');
+
+  config(function(){
+    
+    callback();
+  });
 }
 
 function testConfig(callback){
-  config.filename('.example_config');
   config(function(error, config){
     if(error) return callback(error);
 
     assert.equal(config.revision, '0.0.0');
 
     assert.equal(config.server.host, 'localhost');
-    assert.equal(config.server.port, '8888');
+    assert.equal(config.server.port, '1314');
     
     assert.equal(config.environ.length, 8);
-    assert.equal(config.environ[0], 'Internet Explorer 9');
-    assert.equal(config.environ[7], 'Opera 11');
+    assert.equal(config.environ[0], 'ie9');
+    assert.equal(config.environ[7], 'opera');
     
     callback();
   });
@@ -172,6 +173,8 @@ function testVerify(callback){
 }
 
 function testUserScripts(callback){
+  var tmp = 'test/tmp';
+
   rimraf(tmp, {}, function(error){
     if(error) return callback(error);
   
@@ -185,19 +188,44 @@ function testUserScripts(callback){
     writeFileSync(tmp+'/2/3/d.js', 'd');
     writeFileSync(tmp+'/2/3/e.js', 'e');
 
-    lowkick.userscripts(function(error, scripts){
+    config(function(error, configdoc){
 
-      if(error) return callback(error);
+      configdoc.scripts = ['tmp'];
 
-      try {
-        assert.arrayContent(scripts, [tmp+'/1/a.js', tmp+'/2/3/d.js', tmp+'/2/3/e.js']);
-        callback();
-      } catch(assertionError) {
-        return callback(assertionError);
-      }
+      lowkick.userscripts(function(error, scripts){
+
+        if(error) return callback(error);
+
+        try {
+          assert.arrayContent(scripts, [tmp+'/1/a.js', tmp+'/2/3/d.js', tmp+'/2/3/e.js']);
+        } catch(assertionError) {
+          error = assertionError;
+        }
+
+        config.filename(undefined);
+
+        rimraf(tmp, {}, function(){
+          callback(error);
+        });
+
+      });
 
     });
 
+  });
+}
+
+function testBrowsers(callback){
+  config.filename('test/.config');
+
+  revision(undefined);
+
+  verify(function(error, verification){
+
+    !error && verification.untested.length > 0 && ( error = new Error('Following browsers have not been tested yet; ' + verification.untested.join(', ')) );
+    !error && verification.failed.length > 0 && ( error = new Error('Following browsers failed to run the tests properly; ' + verification.failed.join(', ')) );
+
+    callback(error);
   });
 }
 
@@ -214,14 +242,16 @@ function testReport(callback){
 function testServer(callback){
   var server = require('./server');
   highkick({ module:server, name:'server', 'silent': true, 'ordered': true }, function(error, result){
-    if(result.fail>0){
+    if(error || result.fail>0){
       server.end(function(){
         callback(new Error('Server tests were failed.'));
       });
       return;
     }
 
-    server.end(callback);
+    report.reset(function(){
+      server.end(callback);
+    });
   });
 }
 
@@ -235,5 +265,6 @@ module.exports = {
   'testGetRevision': testGetRevision,
   'testSetRevision': testSetRevision,
   'testUserScripts': testUserScripts,
-  'testServer': testServer
+  'testServer': testServer,
+  'testBrowsers': testBrowsers
 }

@@ -5,9 +5,9 @@ var HELP = ['usage: lowkick [action] [options]'
          , 'Simplifies running and verifying cross-browser tests on command-line.'
          , ''
          , 'actions:'
-         , '  revision   <config>                  Show the revision number LowKick recognizes. Pass <config> if it contains any version/revision definiton.'
-         , '  verify     <config> <results-file>   Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
-         , '  publish    <config> <results-file>   Start publishing tests. Default <results-file> value is lowkick-test-results.json'
+         , '  revision   <config>    Show the revision number LowKick recognizes. Pass <config> if it contains any version/revision definiton.'
+         , '  verify     <config>    Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
+         , '  publish    <config>    Start publishing tests. Default <results-file> value is lowkick-test-results.json'
          , ''
          , 'options:'
          , '  quiet     Hide console messages'
@@ -38,24 +38,19 @@ function revision(){
 }
 
 function verify(){
-  lowkick.quiet();
+  !argv.verbose && !argv.quiet && lowkick.quiet();
 
-  var configFilename  = argv._[1],
-      resultsFilename = argv._[2];
+  var configFilename  = argv._[1];
 
   configFilename && lowkick.config.filename(configFilename);
-  resultsFilename && lowkick.report.filename(resultsFilename);
 
   lowkick.cli.verify();
 }
 
 function publish(){
-  
-  var configFilename  = argv._[1],
-      resultsFilename = argv._[2];
+  var configFilename  = argv._[1];
 
   configFilename && lowkick.config.filename(configFilename);
-  resultsFilename && lowkick.report.filename(resultsFilename);
 
   !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
 
@@ -74,11 +69,11 @@ var action = argv._[0];
 
 if(argv.verbose) {
   lowkick.verbose();
-}  
+}
 
 if(argv.quiet) {
   lowkick.quiet();
-}  
+}
 
 switch(action){
   case 'revision': revision(); break;

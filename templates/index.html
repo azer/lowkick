@@ -2,44 +2,40 @@
 <html>
   <head>
     <title>{{ name }} {{ revision }} - LowKick</title>
-    <script type='text/javascript'>
+    <link rel='stylesheet' href='/static/style.css'></link>
+    <script type="text/javascript" src="/static/jquery.js"></script>
+    <script type="text/javascript" src="/static/environ.js"></script>
+    <script type="text/javascript" src="/static/lowkick.js"></script>
+    <script type="text/javascript" src="/static/layout.js"></script>
+
+    <!--[if IE]>
+    <script>
+      JSON = (function(u){ return u; })();
     </script>
-
-    <style type='text/css'>
-      html, body { margin:0; padding:20px; background:#111; font:14px Arial, sans-serif; color:#eee; }
-
-      h1 { margin:20px 20px 40px 0px; font:bold 32px serif; color:#ffcc00; }
-      h1 span, h2 span { background:#181818; padding:5px 15px; }
-      h1 span { background:#aa0000; }
-
-      h2 { margin-top:20px; color:#ffff00; font:bold 16px Arial, sans-serif; margin-bottom:0; }
-
-      .left { width:400px; float:left; }
-      .right { width:400px; float:right; }
-
-      .section { margin-top:2px; width:600px; padding:5px; background:#181818; color:#ccc; }
-
-      a { text-decoration:none; }
-      a:hover { color:#ffcc00; text-decoration:underline; }
-
-      .scripts {  }
-      .scripts li { line-height:18px; }
-      .scripts .url { color: #333; }
-      .scripts .url:hover { color: #888; }
-
-    </style>
+    <script type="text/javascript" src="/static/json2.js"></script>
+    <![endif]-->
 
     {{#scripts}}
     <script type="text/javascript" src="/scripts/{{ . }}"></script>
     {{/scripts}}
   </head>
   <body>
-    <h1><span>{{ name }} {{ revision }}</span></h1>
+    <h1><span class='name'>{{ name }}</span><span class='rev'>{{ revision }}</span></h1>
 
+    <h2><span>Environment</span></h2>
     <div class='section'>
-      <script>
-        document.write(navigator.userAgent);
-      </script>
+      <pre id="env">Detecting environment...</pre>
+    </div>
+
+    <div class='buttons'>
+      <div class='desc'>Press the buttons to set the test result of this environment.</div>
+      <a class="button fail" href="javascript: lowkick.layout.fail()">Fail</a>
+      <a class="button ok" href="javascript: lowkick.layout.ok()">OK</a>
+    </div>
+
+    <h2><span>Results ({{ resultsFilename }})</span></h2>
+    <div class='section'>
+      <pre id="results">Loading results...</pre>
     </div>
 
     <h2><span>Loaded Scripts</span></h2>
@@ -56,10 +52,6 @@
       <pre>{{ config }}</pre>
     </div>
 
-    <h2><span>Results ({{ resultsFilename }})</span></h2>
-    <div class='section'>
-      <pre>{{ results }}</pre>
-    </div>
 
 
   </body>
