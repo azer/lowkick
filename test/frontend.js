@@ -27,8 +27,12 @@
   }
 
   function run(){
+    lowkick.message('Running "testFailFn"');
     exports.testFailFn(function(){
+      lowkick.message('Running "testOkFn"');
       exports.testOkFn(function(){
+
+        lowkick.message("All frontend tests passed successfully.");
         lowkick.layout.ok();
       });
     });

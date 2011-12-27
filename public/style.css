@@ -1,0 +1,34 @@
+html, body { margin:0; padding:20px; background:#111; font:14px Arial, sans-serif; color:#eee; }
+
+h1 { margin:20px 20px 40px 0px; font:bold 32px serif; color:#ffcc00; }
+h1 span, h2 span { background:#181818; padding:5px 15px; }
+h1 span { background:#aa0000; }
+h1 .rev { padding-left:10px; background:#007700; }
+
+h2 { margin-top:20px; color:#ffff00; font:bold 16px Arial, sans-serif; margin-bottom:0; }
+
+.section { margin-top:2px; width:600px; padding:5px; background:#181818; color:#ccc; }
+
+a { text-decoration:none; }
+a:hover { color:#ffcc00; text-decoration:underline; }
+
+.scripts {  }
+.scripts li { line-height:18px; }
+.scripts .url { color: #333; }
+.scripts .url:hover { color: #888; }
+
+.buttons {  width:580px; text-align:right; padding:10px 15px; background:#121210; border-top: #1d1d18 1px solid; }
+.buttons .desc { *margin-top:5px; *left:45px; color:#848470; position:absolute; }
+.buttons .button {
+    padding: 5px 15px; margin-left: 1px;
+    background: #131313; color: #888;
+    text-decoration: none;
+}
+
+.buttons .fail { background:#880000; color:#ccaa00; }
+.buttons .fail:hover { background:#aa0000; color:#ffcc00; }
+
+.buttons .ok { background:#005500; color:#ccaa00; }
+.buttons .ok:hover { background:#007700; color:#ffcc00; }
+
+#messages { text-align:left; font:11px Arial, sans-serif; padding:10px 0; color:#626250; background:#141410; border-top:1px solid #181818; padding:10px 15px; width:580px; }
