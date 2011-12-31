@@ -31,9 +31,20 @@ function testSave(callback){
     results['foo'] = true;
     
     report.save(function(error){
-      if(error) return callback(error);
-      
-      assert.ok( JSON.parse(fs.readFileSync(report.filename())).foo );
+      if(error){ 
+        callback(error);
+        return;
+      }
+
+      var doc; 
+
+      try {
+        doc = JSON.parse(fs.readFileSync(report.filename()))
+      } catch(jsonParsingError){
+        callback(jsonParsingError);
+        return;
+      }
+
       callback();
     });
   });

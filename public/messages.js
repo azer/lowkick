@@ -6,7 +6,7 @@
     messages.push( messages.length + '. ' + msg );
     exports.display();
 
-    lowkick.post('message', { 'msg': msg });
+    lowkick.api.post('message', { 'msg': msg });
   };
 
   exports.get = function get(){

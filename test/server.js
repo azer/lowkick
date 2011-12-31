@@ -64,8 +64,12 @@ function init(options, callback){
 }
 
 function end(callback){
-  process.stop();
-  callback();
+  try {
+    process.stop();
+    callback();
+  } catch(err) {
+    callback(err);
+  }
 }
 
 function get(path, callback){

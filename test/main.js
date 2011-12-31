@@ -45,7 +45,7 @@ function testConfig(callback){
 }
 
 function testGetRevision(callback){
-  revision('');
+  revision(undefined);
   revision(function(rev){
     try {
       assert.equal(rev, '0.0.0');
@@ -55,20 +55,22 @@ function testGetRevision(callback){
     
     config(function(err, configdoc){
       delete configdoc.revision;
-      
+     
       revision(function(rev){
         try {
-          assert.equal(rev, '0.0.1');
+          assert.ok(rev.match(/^0\.0\.1/));
         } catch(assertionError){
-          return callback(assertionError);
+          callback(assertionError);
+          return;
         }
-
+        
         callback();
       });
 
     });
 
   });
+
 }
 
 function testSetRevision(callback){
@@ -84,7 +86,7 @@ function testGitDescription(callback){
 
     revision.gitDescription(function(error, rev){
       if(error && error.message != _error.message) return callback(error);
-      assert.equal(rev, _stdout);
+      assert.equal(rev, _stdout.replace(/\s|\n/g, ''));
       callback();
     });
   });
@@ -242,7 +244,9 @@ function testReport(callback){
 function testServer(callback){
   var server = require('./server');
   highkick({ module:server, name:'server', 'silent': true, 'ordered': true }, function(error, result){
+
     if(error || result.fail>0){
+      lowkick.logging.error(error);
       server.end(function(){
         callback(new Error('Server tests were failed.'));
       });

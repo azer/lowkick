@@ -1,31 +1,9 @@
 !(function(exports){
 
-  function environPropertyNames(){
-    var keys = [],
-        props = environ(),
-        key;
-
-    for(key in props){
-      keys.push(key);
-    }
-
-    return keys;
-  }
-
-  exports.ok = function ok(){
-    lowkick.message('Setting test result of current environment as OK');
-    lowkick.ok(environPropertyNames(), exports.results);
-  };
-
-  exports.fail = function fail(){
-    lowkick.message('Setting test result of current environment as FAIL');
-    lowkick.fail(environPropertyNames(), exports.results);
-  };
-
   exports.results = function results(callback){
     $("#results").html("Updating results...");
 
-    lowkick.results(function(error, results){
+    lowkick.api.results(function(error, results){
       if(error){
         lowkick.message('Failed to fetch test results...');
         callback(error);
