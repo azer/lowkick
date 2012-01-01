@@ -13,7 +13,7 @@
           error = new Error('Unexpected API Error'); 
         }
 
-        callback(error, data); 
+        callback && callback(error, data); 
       }
     });
   }
@@ -32,7 +32,7 @@
           error = new Error('Unexpected API Error'); 
         }
 
-        callback(error, data); 
+        callback && callback(error, data); 
       }
     });
   }
@@ -52,7 +52,7 @@
     post('set', results, callback);
   };
 
-  exports.results = function results(callback){
+  exports.results = lowkick.results = function results(callback){
     exports.get('results', callback);
   };
 

@@ -1,7 +1,7 @@
 !(function(exports){
 
   exports.testOkFn = function(callback){
-    lowkick.ok(['foo', 'bar'], function(error){
+    lowkick.api.ok(['foo', 'bar'], function(error){
       lowkick.results(function(error, results){
         assert(results.environ.foo, true);
         assert(results.environ.bar, true);
@@ -11,7 +11,7 @@
   };
 
   exports.testFailFn = function(callback){
-    lowkick.fail(['foo', 'bar'], function(error){
+    lowkick.api.fail(['foo', 'bar'], function(error){
       lowkick.results(function(error, results){
         assert(results.environ.foo, false);
         assert(results.environ.bar, false);
@@ -33,7 +33,7 @@
       exports.testOkFn(function(){
 
         lowkick.message("All frontend tests passed successfully.");
-        lowkick.layout.ok();
+        lowkick.ok();
       });
     });
   }
