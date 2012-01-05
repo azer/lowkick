@@ -30,7 +30,7 @@ function testConfig(callback){
     assert.equal(config.revision, '0.0.0');
 
     assert.equal(config.server.host, 'localhost');
-    assert.equal(config.server.port, '1314');
+    assert.equal(config.server.port, '1315');
     
     assert.equal(config.environ.length, 7);
     assert.equal(config.environ[0], 'ie6');

@@ -19,7 +19,7 @@
 
   "server": {
     "host": "localhost",
-    "port": 1314
+    "port": 1315
   },
 
   "commands": {
