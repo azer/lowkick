@@ -20,7 +20,7 @@ function init(options, callback){
 }
 
 function testFilename(callback){
-  assert.equal('test/results-tmp.json', report.filename());
+  assert.equal('test/tmp-results.json', report.filename());
   callback();
 }
 

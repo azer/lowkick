@@ -1,0 +1,37 @@
+{
+  "name": "Lowkick Tests",
+  "revision": "0.0.0",
+  "target": "results.json",
+
+  "environ": [
+    "ie6",
+    "ie7",
+    "ie8",
+    "ie9",
+    "firefox",
+    "webkit",
+    "opera"
+  ],
+
+  "server": {
+    "host": "localhost",
+    "port": "1314"
+  },
+
+  "scripts":[
+    "frontend.js"
+  ],
+
+  "commands": {
+    "node": {
+      "driver": "node",
+      "script": "test/run.js"
+    },
+
+    "ie6": {
+      "driver": "virtualbox",
+      "vm": "ie6",
+      "exec": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+    }
+  }
+}

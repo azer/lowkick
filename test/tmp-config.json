@@ -1,0 +1,31 @@
+{
+  "name": "Lowkick Tests",
+  "revision": "0.0.0",
+  "target": "tmp-results.json",
+
+  "environ": [
+    "ie6",
+    "ie7",
+    "ie8",
+    "ie9",
+    "firefox",
+    "webkit",
+    "opera"
+  ],
+
+  "scripts":[
+    "frontend.js"
+  ],
+
+  "server": {
+    "host": "localhost",
+    "port": 1314
+  },
+
+  "commands": {
+    "node": {
+      "driver": "node",
+      "script": "test/run.js"
+    }
+  }
+}

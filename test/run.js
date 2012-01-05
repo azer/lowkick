@@ -13,5 +13,5 @@ lowkick.quiet();
 
 highkick({ module:require('./main'), name:'  main', ordered:true }, function(error, result){
   if(error) throw error;
-  unlinkSync('test/results-tmp.json');
+  unlinkSync('test/tmp-results.json');
 });

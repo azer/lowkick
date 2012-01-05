@@ -17,7 +17,7 @@ function init(options, callback){
     return;
   }
 
-  config.filename('test/.tmp');
+  config.filename('test/tmp-config.json');
 
   report.reset(function(error){
 
@@ -28,7 +28,7 @@ function init(options, callback){
       return;
     }
   
-    process = forever.start(['./bin/lowkick', 'publish', 'test/.tmp'], {
+    process = forever.start(['./bin/lowkick', 'publish', 'test/tmp-config.json'], {
       silent: true
     });
 

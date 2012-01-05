@@ -19,12 +19,8 @@ var assert        = require('assert'),
     readFileSync  = fs.readFileSync;
 
 function init(options, callback){
-  config.filename('test/.tmp');
-
-  config(function(){
-    
-    callback();
-  });
+  config.filename('test/tmp-config.json');
+  callback();
 }
 
 function testConfig(callback){
@@ -36,26 +32,29 @@ function testConfig(callback){
     assert.equal(config.server.host, 'localhost');
     assert.equal(config.server.port, '1314');
     
-    assert.equal(config.environ.length, 8);
-    assert.equal(config.environ[0], 'ie9');
-    assert.equal(config.environ[7], 'opera');
+    assert.equal(config.environ.length, 7);
+    assert.equal(config.environ[0], 'ie6');
+    assert.equal(config.environ[6], 'opera');
     
     callback();
   });
 }
 
 function testGetRevision(callback){
-  revision(undefined);
-  revision(function(rev){
-    try {
-      assert.equal(rev, '0.0.0');
-    } catch(assertionError){
-      return callback(assertionError);
-    }
-    
-    config(function(err, configdoc){
+  config(function(error, configdoc){
+
+    revision(function(rev){
+      try {
+        assert.equal(rev, '0.0.0');
+      } catch(assertionError){
+        callback(assertionError);
+        return;
+      }
+
+      revision(undefined);
+
       delete configdoc.revision;
-     
+      
       revision(function(rev){
         try {
           assert.ok(rev.match(/^0\.0\.1/));
@@ -71,11 +70,13 @@ function testGetRevision(callback){
 
   });
 
+
 }
 
 function testSetRevision(callback){
   lowkick.revision('0.0.2', function(rev){
     assert.equal(rev, '0.0.2');
+    lowkick.revision(undefined);
     callback();
   });
 }
@@ -218,7 +219,7 @@ function testUserScripts(callback){
 }
 
 function testBrowsers(callback){
-  config.filename('test/.config');
+  config.filename('test/config.json');
 
   revision(undefined);
 
@@ -229,6 +230,7 @@ function testBrowsers(callback){
 
     callback(error);
   });
+
 }
 
 function testReport(callback){
