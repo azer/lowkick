@@ -22,7 +22,8 @@
     "optimist": "0.2.x",
     "color": "0.x",
     "connect": "1.x.x",
-    "mustache": "0.x.x"
+    "mustache": "0.x.x",
+    "virtualbox": "0.x"
   },
   "repository": { "type": "git",  "url" : "http://github.com/azer/lowkick.git" },
   "scripts":{
