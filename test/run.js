@@ -9,7 +9,7 @@ assert.arrayContent = function assertContent(a, b){
   })); 
 }
 
-lowkick.quiet();
+lowkick.logging.setLevel('WARN');
 
 highkick({ module:require('./main'), name:'  main', ordered:true }, function(error, result){
   if(error) throw error;

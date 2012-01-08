@@ -5,9 +5,10 @@ var HELP = ['usage: lowkick [action] [options]'
          , 'Simplifies running and verifying cross-browser tests on command-line.'
          , ''
          , 'actions:'
-         , '  revision   <config>    Show the revision number LowKick recognizes. Pass <config> if it contains any version/revision definiton.'
-         , '  verify     <config>    Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
-         , '  publish    <config>    Start publishing tests. Default <results-file> value is lowkick-test-results.json'
+         , '  revision   <config               Show the revision number LowKick recognizes. Pass <config> if it contains any version/revision definiton.'
+         , '  verify     <config>              Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
+         , '  publish    <config>              Start publishing tests. Default <results-file> value is lowkick-test-results.json'
+         , '  command    <command> <config>    Run specified custom commmand. Custom commands are defined in the config file.'
          , ''
          , 'options:'
          , '  quiet     Hide console messages'
@@ -57,6 +58,16 @@ function publish(){
   lowkick.cli.publish();
 }
 
+function command(){
+  var configFilename  = argv._[2],
+      commandName = argv._[1];
+  
+  configFilename && lowkick.config.filename(configFilename);
+  !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
+
+  lowkick.cli.command(commandName);
+}
+
 function version(){
   throw new Error('not implemented');
 }
@@ -79,6 +90,7 @@ switch(action){
   case 'revision': revision(); break;
   case 'verify': verify(); break;
   case 'publish': publish(); break;
+  case 'command': command(); break;
   default:
     if(argv.version){
       version();

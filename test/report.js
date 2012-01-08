@@ -1,19 +1,15 @@
 var assert  = require('assert'),
-    config  = require('../lib/config'),
-    report  = require('../lib/report'),
+
+    lowkick = require('../lib/lowkick'),
+    report  = lowkick.report,
+
     fs      = require('fs'),
     path    = require('path'),
     exists  = path.existsSync,
     join    = path.join,
-    dirname = path.dirname,
-    lowkick;
-
+    dirname = path.dirname;
 
 function init(options, callback){
-  if(!lowkick) {
-    lowkick = require('../lib/lowkick');
-  }
-
   report.reset(function(){
     callback();
   });

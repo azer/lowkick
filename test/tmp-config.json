@@ -2,6 +2,7 @@
   "name": "Lowkick Tests",
   "revision": "0.0.0",
   "target": "tmp-results.json",
+  "logs": "tmp-logs",
 
   "environ": [
     "ie6",
@@ -25,7 +26,7 @@
   "commands": {
     "node": {
       "driver": "node",
-      "script": "test/run.js"
+      "script": "test/pi.js"
     }
   }
 }

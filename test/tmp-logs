@@ -1,0 +1,1060 @@
+[2012-01-07 21:10:52.311] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:10:52.913] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:52.913] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:52.913] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:53.214] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:53.214] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:53.214] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:53.520] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:53.520] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:53.520] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:53.826] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:53.826] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:53.826] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:54.130] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:54.130] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:54.130] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:54.446] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:10:54.446] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:10:54.446] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:10:54.630] [ERROR] lowkick - Error: Connection timeout. (2036 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1219:11)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:836:27)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-07 21:10:54.630] [ERROR] lowkick - Error: Connection timeout. (2036 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1219:11)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:836:27)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-07 21:18:29.399] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:18:29.399] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:18:29.399] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:19:13.044] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:19:13.045] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:19:13.045] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:34:03.391] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-07 21:34:03.391] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:34:03.391] [INFO] console - undefined
+[2012-01-07 21:34:03.391] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:34:03.391] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:34:03.391] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:34:03.392] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:34:03.392] [INFO] console - undefined
+[2012-01-07 21:34:03.392] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-07 21:34:42.736] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-07 21:34:42.736] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:34:42.736] [INFO] console - undefined
+[2012-01-07 21:34:42.737] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:34:42.737] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:34:42.737] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:34:42.737] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:34:42.737] [INFO] console - undefined
+[2012-01-07 21:34:42.737] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-07 21:35:05.477] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-07 21:35:05.477] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:35:05.477] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:35:05.478] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:35:05.478] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:35:05.478] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:35:05.478] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-07 21:35:08.443] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:36:37.543] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:41:21.275] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:42:09.960] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:42:16.492] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:42:16.517] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-07 21:43:18.492] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:43:18.514] [TRACE] lowkick - config filename: {}
+[2012-01-07 21:43:18.517] [TRACE] lowkick - config filename: { '0': undefined }
+[2012-01-07 21:45:51.943] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:45:51.970] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-07 21:46:21.841] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:46:21.869] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-07 21:47:03.700] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:47:04.046] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-07 21:47:04.056] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-07 21:47:04.057] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-07 21:47:04.361] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:47:04.361] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:47:04.361] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:47:04.362] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:47:04.362] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-07 21:50:06.681] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:50:06.705] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-07 21:50:39.601] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-07 21:50:39.628] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-07 21:50:39.629] [FATAL] lowkick - Error: Couldn't find any file at "%s"
+    at update (/home/azer/dev/lowkick/lib/config.js:33:11)
+    at Function.filename (/home/azer/dev/lowkick/lib/config.js:20:5)
+    at /home/azer/dev/lowkick/test/main.js:211:14
+    at /home/azer/dev/lowkick/lib/userscripts.js:29:5
+    at /home/azer/dev/lowkick/lib/userscripts.js:57:7
+    at /home/azer/dev/lowkick/node_modules/combiner/node_modules/functools/lib/functools.js:136:16
+    at /home/azer/dev/lowkick/node_modules/combiner/node_modules/functools/lib/functools.js:115:17
+    at /home/azer/dev/lowkick/node_modules/combiner/lib/combiner.js:56:9
+    at /home/azer/dev/lowkick/node_modules/combiner/node_modules/functools/lib/functools.js:136:16
+    at /home/azer/dev/lowkick/node_modules/combiner/node_modules/functools/lib/functools.js:115:17
+[2012-01-07 21:50:39.633] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-07 21:50:39.634] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-07 21:50:39.634] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-07 21:50:39.636] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-07 21:50:39.635] [TRACE] lowkick - Updating config clients...
+[2012-01-07 21:50:39.636] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:50:39.635] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-07 21:50:39.636] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:50:39.636] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-07 21:50:39.636] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:50:39.636] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:50:39.636] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:50:39.636] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:50:39.637] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:50:39.636] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:50:39.958] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:50:39.636] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:50:39.959] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-07 21:50:39.637] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:50:39.958] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:50:39.959] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-07 21:50:40.267] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-07 21:50:40.267] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:50:40.267] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:50:40.267] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:50:40.268] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-07 21:52:40.326] [ERROR] lowkick - Error: Connection timeout. (120363 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1290:31)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:837:12)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-07 21:52:40.326] [ERROR] lowkick - Error: Connection timeout. (120363 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1290:31)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:837:12)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-07 21:52:40.336] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-07 21:52:40.336] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-07 21:52:40.337] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-07 21:52:40.337] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-07 21:52:40.337] [TRACE] lowkick - Updating config clients...
+[2012-01-07 21:52:40.337] [TRACE] lowkick - Updating config clients...
+[2012-01-07 21:52:40.339] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-07 21:52:40.339] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-07 21:52:40.339] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-07 21:52:40.339] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-07 21:52:40.340] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-07 21:52:40.340] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-07 21:52:40.340] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-07 21:52:40.340] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-07 21:52:40.340] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:52:40.340] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-07 21:52:40.340] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:52:40.340] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-07 21:52:40.340] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:52:40.340] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-07 21:52:40.341] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:52:40.341] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-07 21:52:40.341] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-07 21:52:40.341] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-07 21:52:40.341] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-07 21:52:40.341] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-07 21:52:40.341] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-07 21:52:40.341] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-07 21:52:40.342] [TRACE] lowkick - Checking test logs...
+[2012-01-07 21:52:40.342] [TRACE] lowkick - Checking test logs...
+[2012-01-07 21:52:40.342] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-07 21:52:40.342] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-07 21:52:40.342] [TRACE] lowkick - Reading report results...
+[2012-01-07 21:52:40.342] [TRACE] lowkick - Reading report results...
+[2012-01-07 21:52:40.343] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-07 21:52:40.343] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-07 21:52:40.345] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-07 21:52:40.345] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-08 00:10:10.512] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:10:10.596] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:10:10.599] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:10:10.600] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:10:10.601] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:10:10.602] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:10:10.601] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:10:10.602] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:10:10.602] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:10:10.602] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:10:10.602] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:10:10.602] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:10:10.602] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:10:10.603] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:10:10.602] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:10:10.603] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:10:10.602] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:10:11.745] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:10:10.603] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:10:11.746] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:10:10.603] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:10:11.745] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:10:11.746] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:10:12.055] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:10:12.055] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:10:12.055] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:10:12.055] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:10:12.056] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:11:37.832] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:11:37.858] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:11:37.861] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:11:37.861] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:11:37.863] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:11:37.862] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:11:37.863] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:11:37.863] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:11:37.864] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:11:37.863] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:11:37.864] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:11:37.863] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:11:37.864] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:11:37.864] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:11:37.864] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:11:37.864] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:11:38.133] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:11:37.864] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:11:38.134] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:11:37.864] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:11:38.133] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:11:38.134] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:11:38.151] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:11:38.151] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:11:38.504] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:11:38.504] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:11:38.504] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:11:38.504] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:11:38.504] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:13:38.610] [ERROR] lowkick - Error: Connection timeout. (120471 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1290:31)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:837:12)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-08 00:13:38.610] [ERROR] lowkick - Error: Connection timeout. (120471 ms)
+    at Request._callback (/home/azer/dev/lowkick/test/server.js:47:22)
+    at Request.callback (/home/azer/dev/lowkick/node_modules/request/main.js:104:22)
+    at Request.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:187:58)
+    at Request.emit (events.js:64:17)
+    at ClientRequest.<anonymous> (/home/azer/dev/lowkick/node_modules/request/main.js:184:10)
+    at ClientRequest.emit (events.js:64:17)
+    at Socket.<anonymous> (http.js:1290:31)
+    at Socket.emit (events.js:64:17)
+    at Array.0 (net.js:837:12)
+    at EventEmitter._tickCallback (node.js:126:26)
+[2012-01-08 00:13:38.620] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-08 00:13:38.620] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-08 00:13:38.621] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-08 00:13:38.621] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-08 00:13:38.637] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:13:38.637] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:13:38.638] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-08 00:13:38.638] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-08 00:13:38.638] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-08 00:13:38.638] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-08 00:13:38.639] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-08 00:13:38.639] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-08 00:13:38.639] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-08 00:13:38.639] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-08 00:13:38.639] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:13:38.639] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:13:38.639] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:13:38.639] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:13:38.639] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:13:38.639] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:13:38.639] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:38.639] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:38.640] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-08 00:13:38.640] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-08 00:13:38.640] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-08 00:13:38.640] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-08 00:13:38.640] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:13:38.640] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:13:38.640] [TRACE] lowkick - Checking test logs...
+[2012-01-08 00:13:38.640] [TRACE] lowkick - Checking test logs...
+[2012-01-08 00:13:38.640] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:13:38.640] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:13:38.640] [TRACE] lowkick - Reading report results...
+[2012-01-08 00:13:38.640] [TRACE] lowkick - Reading report results...
+[2012-01-08 00:13:38.641] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-08 00:13:38.641] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-08 00:13:38.678] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-08 00:13:38.678] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-08 00:13:43.181] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:13:43.209] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:13:43.214] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:13:43.214] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:13:43.216] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:13:43.215] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:13:43.216] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:13:43.215] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:13:43.217] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:13:43.216] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:13:43.217] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:13:43.216] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:13:43.217] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:13:43.217] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:13:43.217] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:43.217] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:13:43.475] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:43.217] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:13:43.476] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:13:43.217] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:43.475] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:43.476] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:13:43.492] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:13:43.492] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:13:43.766] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:13:43.766] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:13:43.766] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:13:43.766] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:13:43.766] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:14:31.616] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:14:31.639] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:14:31.642] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:14:31.642] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:14:31.644] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:14:31.643] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:14:31.644] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:31.643] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:14:31.644] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:31.644] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:14:31.645] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:14:31.644] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:31.645] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:31.644] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:31.645] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:31.645] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:14:31.902] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:31.645] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:31.903] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:14:31.645] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:31.908] [INFO] console - start
+[2012-01-08 00:14:31.902] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:31.903] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:14:31.908] [INFO] console - start
+[2012-01-08 00:14:31.920] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:14:31.920] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:14:32.199] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:32.199] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:32.199] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:32.199] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:32.200] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:14:52.081] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:14:52.105] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:14:52.108] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:14:52.108] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:14:52.110] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:14:52.109] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:14:52.111] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:52.110] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:14:52.111] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:52.110] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:14:52.111] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:14:52.111] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:52.111] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:52.111] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:52.112] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:52.111] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:14:52.372] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:52.111] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:52.373] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:14:52.112] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:52.372] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:52.373] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:14:52.390] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:14:52.390] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:14:52.708] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:14:52.708] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:14:52.709] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:14:52.709] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:14:52.709] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:15:22.213] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:15:22.236] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:15:22.239] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:15:22.240] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:15:22.241] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:15:22.240] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:15:22.242] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:15:22.241] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:15:22.242] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:15:22.241] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:15:22.242] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:15:22.242] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:15:22.242] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:15:22.242] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:15:22.242] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:15:22.242] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:15:22.519] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:15:22.242] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:15:22.520] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:15:22.242] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:15:22.526] [INFO] console - 1
+[2012-01-08 00:15:22.519] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:15:22.526] [INFO] console - 2
+[2012-01-08 00:15:22.520] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:15:22.526] [INFO] console - 3
+[2012-01-08 00:15:22.526] [INFO] console - 1
+[2012-01-08 00:15:22.526] [INFO] console - 2
+[2012-01-08 00:15:22.526] [INFO] console - 3
+[2012-01-08 00:15:22.545] [INFO] console - 4
+[2012-01-08 00:15:22.545] [INFO] console - 4
+[2012-01-08 00:15:22.546] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:15:22.546] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:15:22.647] [INFO] console - 3
+[2012-01-08 00:15:22.647] [INFO] console - 3
+[2012-01-08 00:15:22.650] [INFO] console - 4
+[2012-01-08 00:15:22.650] [INFO] console - 4
+[2012-01-08 00:15:22.750] [INFO] console - 3
+[2012-01-08 00:15:22.750] [INFO] console - 3
+[2012-01-08 00:15:22.751] [INFO] console - 4
+[2012-01-08 00:15:22.751] [INFO] console - 4
+[2012-01-08 00:15:22.839] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:15:22.839] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:15:22.839] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:15:22.839] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:15:22.840] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:15:22.852] [INFO] console - 3
+[2012-01-08 00:15:22.852] [INFO] console - 3
+[2012-01-08 00:16:18.711] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:16:18.733] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:16:18.735] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:16:18.736] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:16:18.738] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:16:18.736] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:16:18.738] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:16:18.737] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:16:18.738] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:16:18.738] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:16:18.740] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:16:18.738] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:16:18.740] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:16:18.738] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:16:18.741] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:16:18.740] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:16:19.010] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:16:18.740] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:16:19.010] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:16:18.741] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:16:19.010] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:16:19.026] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.010] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:16:19.026] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.027] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:16:19.027] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:16:19.130] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.130] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.231] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.231] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:16:19.323] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:16:19.324] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:16:19.324] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:16:19.324] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:16:19.324] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:17:04.967] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:17:04.992] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:17:04.995] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:17:04.995] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:17:04.998] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:17:04.996] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:17:04.998] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:04.997] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:17:04.998] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:04.998] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:17:04.998] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:17:04.998] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:04.998] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:04.998] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:04.999] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:04.998] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:17:05.298] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:04.998] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:05.299] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:17:04.999] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:05.298] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:05.299] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:17:05.317] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:17:05.317] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:17:05.625] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:05.625] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:05.625] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:05.625] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:05.626] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:17:33.831] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:17:33.855] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:17:33.857] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:17:33.858] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:17:33.859] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:17:33.858] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:17:33.860] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:33.859] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:17:33.860] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:33.859] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:17:33.860] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:17:33.860] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:33.860] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:33.860] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:33.860] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:33.860] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:17:34.116] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:33.860] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:34.117] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:17:33.860] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:34.116] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:34.132] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.117] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:17:34.134] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:17:34.132] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.134] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:17:34.236] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.236] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.337] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.337] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:17:34.426] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:17:34.426] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:17:34.426] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:17:34.426] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:17:34.426] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:18:19.457] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:18:19.483] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:18:19.486] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:18:19.487] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:18:19.489] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:18:19.487] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:18:19.489] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:19.488] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:18:19.490] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:19.489] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:18:19.490] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:18:19.489] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:19.490] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:19.490] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:19.490] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:19.490] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:18:19.788] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:19.490] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:19.789] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:18:19.490] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:19.788] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:19.806] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:19.789] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:18:19.806] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:19.808] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:18:19.808] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:18:19.910] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:19.910] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:20.011] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:20.011] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:20.113] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:20.113] [INFO] console - Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) '#'
+[2012-01-08 00:18:20.151] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:20.151] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:20.151] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:20.152] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:20.152] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:18:47.078] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:18:47.102] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:18:47.106] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:18:47.106] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:18:47.108] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:18:47.107] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:18:47.108] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:47.107] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:18:47.108] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:47.108] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:18:47.109] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:18:47.108] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:47.109] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:47.108] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:47.109] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:47.109] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:18:47.397] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:47.109] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:47.397] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:18:47.109] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:47.397] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:47.397] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:18:47.415] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:18:47.415] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:18:47.722] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:18:47.722] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:18:47.722] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:18:47.722] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:18:47.722] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:20:45.953] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:20:45.975] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:20:45.977] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:20:45.978] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:20:45.979] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:20:45.978] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:20:45.980] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:20:45.979] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:20:45.980] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:20:45.979] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:20:45.980] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:20:45.980] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:20:45.980] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:20:45.980] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:20:45.980] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:20:45.980] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:20:46.251] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:20:45.980] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:20:46.252] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:20:45.980] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:20:46.272] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.251] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:20:46.252] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:20:46.272] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.275] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:20:46.275] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:20:46.376] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.376] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.477] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.477] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.579] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.579] [INFO] console - >> Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12)
+[2012-01-08 00:20:46.575] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:20:46.575] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:20:46.575] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:20:46.575] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:20:46.575] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:21:04.621] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:21:04.644] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:21:04.646] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:21:04.647] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:21:04.649] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:21:04.647] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:21:04.649] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:04.648] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:21:04.649] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:04.649] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:21:04.649] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:21:04.649] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:04.650] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:04.649] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:04.650] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:04.649] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:21:04.901] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:04.650] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:04.902] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:21:04.650] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:04.901] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:04.902] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:21:04.918] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:21:04.918] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:21:05.232] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:05.232] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:05.232] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:05.232] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:05.232] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:21:47.889] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:21:47.916] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:21:47.919] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:21:47.920] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:21:47.921] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:21:47.920] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:21:47.921] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:47.921] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:21:47.922] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:47.921] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:21:47.922] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:21:47.921] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:47.922] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:47.922] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:47.922] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:47.922] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:21:48.186] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:47.922] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:48.187] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:21:47.922] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:48.186] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:48.203] [INFO] console - true
+[2012-01-08 00:21:48.187] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:21:48.203] [INFO] console - true
+[2012-01-08 00:21:48.204] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:21:48.204] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:21:48.306] [INFO] console - true
+[2012-01-08 00:21:48.306] [INFO] console - true
+[2012-01-08 00:21:48.407] [INFO] console - true
+[2012-01-08 00:21:48.407] [INFO] console - true
+[2012-01-08 00:21:48.501] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:21:48.501] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:21:48.501] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:21:48.501] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:21:48.502] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:22:25.451] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:22:25.452] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:22:25.452] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:22:25.452] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:22:25.452] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:23:59.521] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:23:59.545] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:23:59.547] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:23:59.547] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:23:59.549] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:23:59.548] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:23:59.549] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:23:59.548] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:23:59.549] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:23:59.549] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:23:59.550] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:23:59.549] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:23:59.550] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:23:59.549] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:23:59.550] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:23:59.550] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:23:59.822] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:23:59.550] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:23:59.822] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:23:59.550] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:23:59.822] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:23:59.838] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:23:59.822] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:23:59.838] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:23:59.839] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:23:59.839] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:23:59.941] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:23:59.941] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:24:00.042] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:24:00.042] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:24:00.123] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:24:00.123] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:24:00.123] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:24:00.123] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:24:00.124] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:25:46.862] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:25:46.862] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:25:46.863] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:25:46.863] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:25:46.863] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:27:38.895] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:27:38.895] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:38.896] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:38.896] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:38.896] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:27:41.103] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:41.177] [INFO] lowkick - Outputting test page for curl/7.21.7 (x86_64-unknown-linux-gnu) libcurl/7.21.7 OpenSSL/1.0.0e zlib/1.2.5 libssh2/1.2.7
+[2012-01-08 00:27:48.304] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:27:48.326] [INFO] lowkick - Config filename has been set to "undefined"
+[2012-01-08 00:27:48.328] [INFO] lowkick - Config filename has been set to "test/tmp-config.json"
+[2012-01-08 00:27:48.329] [DEBUG] lowkick - Loading configuration "test/tmp-config.json"
+[2012-01-08 00:27:48.331] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:27:48.329] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:27:48.331] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:27:48.330] [INFO] lowkick - Adding "test/tmp-logs" as a file appender to the logger.
+[2012-01-08 00:27:48.331] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:48.331] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:27:48.331] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:27:48.331] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:27:48.331] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:48.331] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:48.332] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.331] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:27:48.597] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.331] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:48.597] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:27:48.332] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.597] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.613] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.597] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:27:48.613] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.614] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:27:48.614] [INFO] lowkick - Found git description for the project;  '0.0.1-9-g8d57ec0'
+[2012-01-08 00:27:48.717] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.717] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.819] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.819] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:27:48.910] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:27:48.910] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:48.910] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:48.911] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.911] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:27:48.922] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.925] [INFO] lowkick - Outputting test page for undefined
+[2012-01-08 00:27:48.927] [INFO] console - 4 null true
+[2012-01-08 00:27:48.927] [INFO] console - 4 null true
+[2012-01-08 00:27:48.927] [INFO] console - 5
+[2012-01-08 00:27:48.927] [INFO] console - 5
+[2012-01-08 00:27:48.934] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.934] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.937] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:27:48.938] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.938] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.941] [INFO] lowkick - Set result of "ie6,ie7,ie8" as fail
+[2012-01-08 00:27:48.941] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.941] [TRACE] lowkick - Reading report from test/tmp-results.json
+[2012-01-08 00:27:48.944] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:27:48.947] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.947] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:48.951] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:27:48.951] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:27:49.059] [INFO] lowkick - Command "node" has been executed successfully.
+[2012-01-08 00:27:49.060] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:49.060] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:49.060] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:27:49.060] [TRACE] lowkick - Saving report to test/tmp-results.json
+[2012-01-08 00:27:49.064] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-08 00:27:49.064] [INFO] lowkick - Config filename has been set to "test/config.json"
+[2012-01-08 00:27:49.065] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-08 00:27:49.065] [DEBUG] lowkick - Loading configuration "test/config.json"
+[2012-01-08 00:27:49.065] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:27:49.065] [TRACE] lowkick - Updating config clients...
+[2012-01-08 00:27:49.066] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-08 00:27:49.066] [INFO] lowkick - Report filename has been set to "test/results.json"
+[2012-01-08 00:27:49.066] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-08 00:27:49.066] [INFO] lowkick - Adding "test/logs" as a file appender to the logger.
+[2012-01-08 00:27:49.067] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-08 00:27:49.067] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1314
+[2012-01-08 00:27:49.067] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-08 00:27:49.067] [INFO] lowkick - Port number has been set to "1314"
+[2012-01-08 00:27:49.067] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:49.067] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:27:49.068] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:27:49.068] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:27:49.068] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:49.068] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:27:49.068] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:49.068] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:27:49.068] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-08 00:27:49.068] [DEBUG] lowkick - Setting revision value to "undefined" (arguments length: 1, typeof first argument: undefined)
+[2012-01-08 00:27:49.068] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-08 00:27:49.068] [INFO] lowkick - Revision has been set to "undefined"
+[2012-01-08 00:27:49.069] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:27:49.069] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:27:49.069] [TRACE] lowkick - Checking test logs...
+[2012-01-08 00:27:49.069] [TRACE] lowkick - Checking test logs...
+[2012-01-08 00:27:49.069] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:27:49.069] [INFO] lowkick - Returning revision "0.0.0" from config document
+[2012-01-08 00:27:49.069] [TRACE] lowkick - Reading report results...
+[2012-01-08 00:27:49.069] [TRACE] lowkick - Reading report results...
+[2012-01-08 00:27:49.070] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-08 00:27:49.070] [TRACE] lowkick - Reading report from test/results.json
+[2012-01-08 00:27:49.072] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-08 00:27:49.072] [INFO] lowkick - Got test results of revision#0.0.0
+[2012-01-08 00:28:29.112] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:28:29.425] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.425] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.529] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.529] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.631] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.631] [INFO] console - 4 Error: ECONNREFUSED, Connection refused
+    at Socket._onConnect (net.js:601:18)
+    at IOWatcher.onWritable [as callback] (net.js:186:12) true
+[2012-01-08 00:28:29.715] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:28:29.716] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:28:29.716] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:28:29.716] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:28:29.716] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:28:29.735] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:28:29.739] [INFO] lowkick - Outputting test page for undefined
+[2012-01-08 00:28:29.740] [INFO] console - 4 null true
+[2012-01-08 00:28:29.740] [INFO] console - 4 null true
+[2012-01-08 00:28:29.741] [INFO] console - 5
+[2012-01-08 00:28:29.741] [INFO] console - 5
+[2012-01-08 00:28:29.750] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:28:29.753] [INFO] lowkick - Set result of "ie6,ie7,ie8" as fail
+[2012-01-08 00:28:29.756] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:28:29.761] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:28:29.761] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:28:29.863] [INFO] lowkick - Command "node" has been executed successfully.
+[2012-01-08 00:28:57.404] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:28:57.976] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:28:57.976] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:28:57.976] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:28:57.976] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:28:57.977] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:28:58.006] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:28:58.009] [INFO] lowkick - Outputting test page for undefined
+[2012-01-08 00:28:58.020] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:28:58.023] [INFO] lowkick - Set result of "ie6,ie7,ie8" as fail
+[2012-01-08 00:28:58.026] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:28:58.032] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:28:58.032] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:28:58.140] [INFO] lowkick - Command "node" has been executed successfully.
+[2012-01-08 00:29:18.869] [WARN] lowkick - Test results' revision (undefined) doesn't match the revision number (0.0.0)
+[2012-01-08 00:29:19.450] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:29:19.450] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:29:19.450] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:29:19.450] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:29:19.450] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:29:19.462] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:29:19.466] [INFO] lowkick - Outputting test page for undefined
+[2012-01-08 00:29:19.476] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:29:19.479] [INFO] lowkick - Set result of "ie6,ie7,ie8" as fail
+[2012-01-08 00:29:19.482] [INFO] lowkick - Set result of "node,v8" as ok
+[2012-01-08 00:29:19.487] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:29:19.487] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:29:19.586] [INFO] lowkick - Command "node" has been executed successfully.
+[2012-01-08 00:33:29.433] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:33:29.433] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:33:29.433] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:33:29.433] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:33:29.433] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:33:29.434] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:34:48.657] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:34:48.657] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:34:48.657] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:34:48.657] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:34:48.657] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:34:48.658] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:34:48.761] [INFO] lowkick - Ran command "node" successfully. Result: [object Object]
+[2012-01-08 00:36:17.248] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:36:17.248] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:36:17.249] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:36:17.249] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:36:17.249] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:36:17.249] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:36:17.359] [INFO] lowkick - Ran command "node" successfully.
+[2012-01-08 00:36:57.730] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:36:57.730] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:36:57.730] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:36:57.730] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:36:57.730] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:36:57.731] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:36:57.830] [INFO] lowkick - Ran command "node" successfully.
+[2012-01-08 00:47:11.155] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:47:11.155] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:47:11.155] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:47:11.155] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:47:11.156] [DEBUG] lowkick - Command "node" is being executed by driver "node"
+[2012-01-08 00:47:11.156] [DEBUG] lowkick - Running a Node command "node test/pi.js"
+[2012-01-08 00:47:11.257] [INFO] lowkick - Ran command "node" successfully.
+[2012-01-08 00:47:22.271] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:47:22.272] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:47:22.272] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:47:22.272] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:47:22.272] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:47:44.277] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:47:44.277] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:47:44.277] [INFO] lowkick - Hostname has been set to "undefined"
+[2012-01-08 00:47:44.278] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:47:44.278] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:47:44.278] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:47:44.278] [INFO] lowkick - Starting server at undefined:1315
+[2012-01-08 00:48:21.523] [TRACE] lowkick - Updating server settings. Hostname: localhost Port: 1315
+[2012-01-08 00:48:21.523] [INFO] lowkick - Port number has been set to "1315"
+[2012-01-08 00:48:21.523] [INFO] lowkick - Hostname has been set to "localhost"
+[2012-01-08 00:48:21.524] [DEBUG] lowkick - Setting revision value to "0.0.0" (arguments length: 1, typeof first argument: string)
+[2012-01-08 00:48:21.524] [INFO] lowkick - Revision has been set to "0.0.0"
+[2012-01-08 00:48:21.524] [INFO] lowkick - Returning revision value from cache;  '0.0.0'
+[2012-01-08 00:48:21.524] [INFO] lowkick - Starting server at localhost:1315

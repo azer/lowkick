@@ -2,6 +2,7 @@
   "name": "Lowkick Tests",
   "revision": "0.0.0",
   "target": "results.json",
+  "logs": "logs",
 
   "environ": [
     "ie6",

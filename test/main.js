@@ -24,52 +24,47 @@ function init(options, callback){
 }
 
 function testConfig(callback){
-  config(function(error, config){
-    if(error) return callback(error);
+  var cfg = config();
 
-    assert.equal(config.revision, '0.0.0');
+  assert.equal(cfg.revision, '0.0.0');
 
-    assert.equal(config.server.host, 'localhost');
-    assert.equal(config.server.port, '1315');
-    
-    assert.equal(config.environ.length, 7);
-    assert.equal(config.environ[0], 'ie6');
-    assert.equal(config.environ[6], 'opera');
-    
-    callback();
-  });
+  assert.equal(cfg.server.host, 'localhost');
+  assert.equal(cfg.server.port, '1315');
+  
+  assert.equal(cfg.environ.length, 7);
+  assert.equal(cfg.environ[0], 'ie6');
+  assert.equal(cfg.environ[6], 'opera');
+
+  callback();
 }
 
 function testGetRevision(callback){
-  config(function(error, configdoc){
+  var configdoc = config();
 
+  revision(function(rev){
+    try {
+      assert.equal(rev, '0.0.0');
+    } catch(assertionError){
+      callback(assertionError);
+      return;
+    }
+
+    revision(undefined);
+
+    delete configdoc.revision;
+    
     revision(function(rev){
       try {
-        assert.equal(rev, '0.0.0');
+        assert.ok(rev.match(/^0\.0\.1/));
       } catch(assertionError){
         callback(assertionError);
         return;
       }
-
-      revision(undefined);
-
-      delete configdoc.revision;
       
-      revision(function(rev){
-        try {
-          assert.ok(rev.match(/^0\.0\.1/));
-        } catch(assertionError){
-          callback(assertionError);
-          return;
-        }
-        
-        callback();
-      });
-
+      callback();
     });
 
   });
-
 
 }
 
@@ -86,7 +81,11 @@ function testGitDescription(callback){
     !_error && _stderr && ( _error = new Error(_stderr) );
 
     revision.gitDescription(function(error, rev){
-      if(error && error.message != _error.message) return callback(error);
+      if(error && error.message != _error.message) { 
+        callback(error);
+        return;
+      }
+
       assert.equal(rev, _stdout.replace(/\s|\n/g, ''));
       callback();
     });
@@ -179,7 +178,10 @@ function testUserScripts(callback){
   var tmp = 'test/tmp';
 
   rimraf(tmp, {}, function(error){
-    if(error) return callback(error);
+    if(error) { 
+      callback(error);
+      return;
+    }
   
     mkdirp.sync(tmp+'/1', 0755);
     mkdirp.sync(tmp+'/2', 0755);
@@ -191,31 +193,29 @@ function testUserScripts(callback){
     writeFileSync(tmp+'/2/3/d.js', 'd');
     writeFileSync(tmp+'/2/3/e.js', 'e');
 
-    config(function(error, configdoc){
+    userscripts(['tmp'], function(error, scripts){
 
-      configdoc.scripts = ['tmp'];
+      if(error) {
+        callback(error);
+        return;
+      }
 
-      lowkick.userscripts(function(error, scripts){
+      try {
+        assert.arrayContent(scripts, [tmp+'/1/a.js', tmp+'/2/3/d.js', tmp+'/2/3/e.js']);
+      } catch(assertionError) {
+        error = assertionError;
+      }
 
-        if(error) return callback(error);
+      config.filename(undefined);
 
-        try {
-          assert.arrayContent(scripts, [tmp+'/1/a.js', tmp+'/2/3/d.js', tmp+'/2/3/e.js']);
-        } catch(assertionError) {
-          error = assertionError;
-        }
-
-        config.filename(undefined);
-
-        rimraf(tmp, {}, function(){
-          callback(error);
-        });
-
+      rimraf(tmp, {}, function(){
+        callback(error);
       });
 
     });
 
   });
+
 }
 
 function testBrowsers(callback){
@@ -236,7 +236,9 @@ function testBrowsers(callback){
 function testReport(callback){
   highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, function(error, result){
     if(result.fail>0){
-      return callback(new Error('Report tests were failed.'));
+      callback(new Error('Report tests were failed.'));
+      return;
+
     }
 
     callback();
