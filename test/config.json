@@ -5,6 +5,7 @@
   "logs": "logs",
 
   "environ": [
+    "node",
     "ie6",
     "ie7",
     "ie8",
@@ -30,9 +31,9 @@
     },
 
     "ie6": {
-      "driver": "virtualbox",
+      "driver": "virtualbox-ie",
       "vm": "ie6",
-      "exec": "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+      "url": "http://10.0.2.2:1314"
     }
   }
 }

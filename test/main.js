@@ -218,21 +218,6 @@ function testUserScripts(callback){
 
 }
 
-function testBrowsers(callback){
-  config.filename('test/config.json');
-
-  revision(undefined);
-
-  verify(function(error, verification){
-
-    !error && verification.untested.length > 0 && ( error = new Error('Following browsers have not been tested yet; ' + verification.untested.join(', ')) );
-    !error && verification.failed.length > 0 && ( error = new Error('Following browsers failed to run the tests properly; ' + verification.failed.join(', ')) );
-
-    callback(error);
-  });
-
-}
-
 function testReport(callback){
   highkick({ module:require('./report'), name:'report', 'silent':true, 'ordered':true }, function(error, result){
     if(result.fail>0){
@@ -273,6 +258,5 @@ module.exports = {
   'testGetRevision': testGetRevision,
   'testSetRevision': testSetRevision,
   'testUserScripts': testUserScripts,
-  'testServer': testServer,
-  'testBrowsers': testBrowsers
+  'testServer': testServer
 }
