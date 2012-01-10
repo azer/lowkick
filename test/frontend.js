@@ -32,9 +32,7 @@
       lowkick.message('Running "testOkFn"');
       exports.testOkFn(function(){
         lowkick.message("All frontend tests passed successfully.");
-        lowkick.ok(function(){
-          lowkick.quit();
-        });
+        lowkick.ok();
       });
     });
   }
