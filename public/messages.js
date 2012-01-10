@@ -3,7 +3,7 @@
   var messages = [];
 
   exports.add = lowkick.message = function add(msg){
-    messages.push( messages.length + '. ' + msg );
+    messages.push( (messages.length+1) + '. ' + msg );
     exports.display();
 
     lowkick.api.post('message', { 'msg': msg });
@@ -16,7 +16,7 @@
   exports.display = function display(){
     var html = '',
         i = messages.length,
-        to = i-3;
+        to = i > 2 ? i-3 : 0;
     
     while(i-->to){
       html += messages[i] + '<br />';
