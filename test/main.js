@@ -193,7 +193,7 @@ function testUserScripts(callback){
     writeFileSync(tmp+'/2/3/d.js', 'd');
     writeFileSync(tmp+'/2/3/e.js', 'e');
 
-    userscripts(['tmp'], function(error, scripts){
+    userscripts([tmp], function(error, scripts){
 
       if(error) {
         callback(error);
