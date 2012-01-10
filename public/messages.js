@@ -2,11 +2,11 @@
 
   var messages = [];
 
-  exports.add = lowkick.message = function add(msg){
+  exports.add = lowkick.message = function add(msg, callback){
     messages.push( (messages.length+1) + '. ' + msg );
     exports.display();
 
-    lowkick.api.post('message', { 'msg': msg });
+    lowkick.api.post('message', { 'msg': msg }, callback);
   };
 
   exports.get = function get(){

@@ -56,4 +56,8 @@
     exports.get('results', callback);
   };
 
+  exports.quit = lowkick.quit = function(callback){
+    post('quit', {}, callback);
+  }
+
 })(this.lowkick.api = {});

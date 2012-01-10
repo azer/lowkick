@@ -12,15 +12,15 @@
     return keys;
   }
 
-  exports.ok = function ok(){
+  exports.ok = function ok(callback){
     lowkick.message('Setting test result of current environment as OK');
-    lowkick.api.ok(environPropertyNames(), exports.results);
+    lowkick.api.ok(environPropertyNames(), callback);
     lowkick.layout.results();
   };
 
-  exports.fail = function fail(){
+  exports.fail = function fail(callback){
     lowkick.message('Setting test result of current environment as FAIL');
-    lowkick.api.fail(environPropertyNames(), exports.results);
+    lowkick.api.fail(environPropertyNames(), callback);
     lowkick.layout.results();
   };
 
