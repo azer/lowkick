@@ -42,7 +42,7 @@
 
     "ie8": {
       "driver": "virtualbox-ie",
-      "vm": "ie7",
+      "vm": "ie8",
       "url": "http://10.0.2.2:1314"
     }
     

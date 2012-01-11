@@ -6,14 +6,17 @@
         "ie6": true,
         "ie": true,
         "dom": true,
-        "node": true,
+        "ie8": true,
         "v8": true,
         "webkit": true,
         "safari": true,
         "gecko": true,
-        "chrome": true
+        "chrome": true,
+        "ie7": true,
+        "node": true,
+        "firefox": true
     },
-    "revision": "0.0.0",
+    "revision": "0.0.1",
     "ok": true,
-    "serverTime": 1326264216604
+    "serverTime": 1326267080744
 }
