@@ -2,6 +2,7 @@ var assert = require('assert'),
     lowkick = require('../lib/lowkick');
 
 function init(options, callback){
+  lowkick.config.filename('test/tmp-config.json');
   callback(undefined, options.get, options.post);
 }
 

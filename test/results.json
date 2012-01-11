@@ -1,6 +1,19 @@
 {
     "environ": {
-        "node": true
+        "bar": true,
+        "foo": true,
+        "navigator": true,
+        "ie6": true,
+        "ie": true,
+        "dom": true,
+        "node": true,
+        "v8": true,
+        "webkit": true,
+        "safari": true,
+        "gecko": true,
+        "chrome": true
     },
-    "revision": "0.0.0"
+    "revision": "0.0.0",
+    "ok": true,
+    "serverTime": 1326264216604
 }

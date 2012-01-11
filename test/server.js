@@ -97,7 +97,7 @@ function post(path, body, callback){
 }
 
 function testAPI(get, post, callback){
-  highkick({ module:require('./api'), name:'API', 'silent':true, 'ordered':true, 'get': get, 'post': post }, function(error, result){
+  highkick({ module:require('./api'), name:'API', 'silent': true, 'ordered':true, 'get': get, 'post': post }, function(error, result){
     if(result.fail>0){
       callback(new Error('API tests were failed.'));
       return;
