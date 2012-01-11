@@ -1,6 +1,7 @@
 {
   "name": "Lowkick Tests",
   "target": "results.json",
+  "version": "0.0.1",
   "logs": "logs",
 
   "environ": [
