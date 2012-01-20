@@ -7,20 +7,19 @@ It aims to:
   * Provide test frameworks an API to save test results
   * Let developers setup remote test servers
 
-Install
-=======
+# Install
+
 ```bash
 $ npm install lowkick
 ```
 
-The Concept
-===========
+# The Concept
+
 See [test/config.json](https://github.com/azer/lowkick/blob/master/test/config.json) and following screenshots;
 
   * https://p.twimg.com/Ai3M7nUCAAE6W26.png:large
 
-First Steps
-===========
+# First Steps
 
 To give LowKick a try, you can run the tests of LowKick. It uses itself to test its frontend API.
 
@@ -94,7 +93,11 @@ details that can be seen below;
 }
 ```
 
-# Test Frameworks
+# REST API
+
+FIX ME
+
+# Working with Test Frameworks
 LowKick itself is not a test framework and doesn't provide anything test frameworks already accomplish. 
 It aims to let developers run all kind of tests on varied environments, from command-line. 
 
@@ -105,11 +108,6 @@ Download and add those following files to on top of the scripts defined your con
   * https://github.com/pivotal/jasmine/blob/master/lib/jasmine-core/jasmine.js
   * https://raw.github.com/pivotal/jasmine/master/lib/jasmine-core/jasmine-html.js
   * https://raw.github.com/gist/1645217/d49f09320feb1e64f77a0e31ae178573fdb6b1aa/gistfile1.js
-
-
-# REST API
-
-FIXME
 
 # Projects Using LowKick
 
