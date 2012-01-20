@@ -1,13 +1,14 @@
 LowKick simplifies running and verifying cross-platform javascript tests on command-line. 
-It aims to accomplish following tasks:
 
-  - Publish JavaScript Tests at a specified URL
-  - Run the tests through drivers (VMs, Remote Machines etc)
-  - Provide test frameworks an API to save test results
-  - Provide users to have remote test servers
+It aims to:
+
+  * Publish JavaScript tests at a specified URL
+  * Run the tests through drivers (VMs, Remote Machines etc)
+  * Provide test frameworks an API to save test results
+  * Let developers setup remote test servers
 
 Install
-==========
+=======
 ```bash
 $ npm install lowkick
 ```
@@ -80,12 +81,21 @@ details that can be seen below;
 }
 ```
 
-Rest API
-========
+# Test Frameworks
+LowKick itself is not a test framework and doesn't provide anything test frameworks already accomplish. 
+It aims to let developers run all kind of tests on varied environments, from command-line. 
 
-FIX ME
+## Jasmine
+Download and add those following files to on top of the scripts defined your config file and you're all set to go!
 
-Projects Using LowKick
-======================
+  * https://github.com/pivotal/jasmine/blob/master/lib/jasmine-core/jasmine.js
+  * https://raw.github.com/pivotal/jasmine/master/lib/jasmine-core/jasmine-html.js
+  * https://raw.github.com/gist/1645217/d49f09320feb1e64f77a0e31ae178573fdb6b1aa/gistfile1.js
 
-FIX ME
+
+# REST API
+FIXME
+
+# Projects Using LowKick
+
+  * HighKick
