@@ -12,9 +12,11 @@ Install
 $ npm install lowkick
 ```
 
-Configuration
-=============
-See [test/config.json](https://github.com/azer/lowkick/blob/master/test/config.json)
+The Concept
+===========
+See [test/config.json](https://github.com/azer/lowkick/blob/master/test/config.json) and following screenshots;
+
+  * https://p.twimg.com/Ai3M7nUCAAE6W26.png:large
 
 First Steps
 ===========
