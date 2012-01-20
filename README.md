@@ -111,4 +111,10 @@ Download and add those following files to on top of the scripts defined your con
 
 # Projects Using LowKick
 
-  * HighKick
+  * [HighKick](http://github.com/azer/highkick)
+
+# Troubleshooting
+
+  * Resetting VMs solves problems.
+  * Make sure that the VM on which you're trying to run tests is saved.
+  * To reset a VM running headlessly; `vboxmanage controlvm "$1" reset`
