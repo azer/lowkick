@@ -1,4 +1,4 @@
-LowKick simplifies running and verifying cross-platform javascript tests on command-line. 
+LowKick simplifies running javascript tests on varied environments, from command-line. 
 
 It aims to:
 
