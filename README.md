@@ -27,7 +27,7 @@ To give LowKick a try, you can run the tests of LowKick. It uses itself to test 
 ```bash
 $ git clone git@github.com:azer/lowkick.git
 $ cd lowkick
-$ make publish # equivelent of "lowkick publish test/config.json"
+$ make publish # equivalent of "lowkick publish test/config.json"
 ```
 
 It'll start publishing the frontend tests at http://localhost:1314. Visit this page with any web browser.
@@ -42,7 +42,7 @@ the [config file](https://github.com/azer/lowkick/blob/master/test/config.json)
 After running the tests on varied environments, you can see the summary of the results;
 
 ```bash
-$ make verify # equivelent of "lowkick verify test/config.json"
+$ make verify # equivalent of "lowkick verify test/config.json"
 Passed: chrome, v8, webkit, safari
 Not Tested: ie6, ie, dom, ie8, gecko, ie7, node, firefox
 
@@ -62,7 +62,7 @@ comfortable with that way. For those who hate seeing IE should LowKick's drivers
 If you have a VirtualBox VM named "ie6" (ie7 or ie8 counts, as well) on your system, following command should work;
 
 ```bash
-$ make test-ie6 # equivelent of "lowkick command ie6 test/config.json"
+$ make test-ie6 # equivalent of "lowkick command ie6 test/config.json"
 ```
 
 First question came to your mind is probably "Does LowKick provide these commands?", the answer is no. 
