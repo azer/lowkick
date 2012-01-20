@@ -99,6 +99,7 @@ LowKick itself is not a test framework and doesn't provide anything test framewo
 It aims to let developers run all kind of tests on varied environments, from command-line. 
 
 ## Jasmine
+
 Download and add those following files to on top of the scripts defined your config file and you're all set to go!
 
   * https://github.com/pivotal/jasmine/blob/master/lib/jasmine-core/jasmine.js
@@ -107,6 +108,7 @@ Download and add those following files to on top of the scripts defined your con
 
 
 # REST API
+
 FIXME
 
 # Projects Using LowKick
