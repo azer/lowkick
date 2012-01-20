@@ -55,10 +55,10 @@ The summary above shows that the tests are run by Google Chrome successfully
 and the other target environments such as IE6, firefox haven't been tested yet.
 
 You can simply open the test URL with Internet Explorer, if you feel
-comfortable with that way. For those who hate seeing IE, LowKick has drivers and commands.
+comfortable with that way. For those who hate seeing IE should LowKick's drivers and commands.
 
 [The config file](https://github.com/azer/lowkick/blob/master/test/config.json)
-of LowKick defines commands the commands IE6, IE7 and IE8 to run its tests
+of LowKick defines the commands IE6, IE7 and IE8 to run its tests
 through virtual machines, using the VirtualBox driver, like below;
 
 ```json
