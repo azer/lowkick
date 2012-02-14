@@ -55,7 +55,7 @@ function testGetRevision(callback){
     
     revision(function(rev){
       try {
-        assert.ok(rev.match(/^0\.0\.1/));
+        assert.ok(rev.match(/^0\.0\.2/));
       } catch(assertionError){
         callback(assertionError);
         return;

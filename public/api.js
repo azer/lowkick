@@ -40,6 +40,13 @@
   exports.get  = get;
   exports.post = post;
 
+  exports.driver = function driver(){
+    var params = document.location.href.replace(/[^\?]+\?/, ''),
+        driverMatching = params.match(/driver\=([^&]+)/);
+
+      return driverMatching ? driverMatching[1] : undefined;
+  };
+
   exports.ok = function ok(environKeys, callback){
     post('ok', { 'environ': environKeys }, callback);
   };
@@ -58,6 +65,6 @@
 
   exports.quit = lowkick.quit = function(callback){
     post('quit', {}, callback);
-  }
+  };
 
 })(this.lowkick.api = {});

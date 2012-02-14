@@ -33,7 +33,9 @@
       exports.testOkFn(function(){
         lowkick.message("All frontend tests passed successfully.");
         lowkick.ok(function(){
-          lowkick.quit();
+          if(lowkick.api.driver()){
+            lowkick.quit();
+          }
         });
       });
     });
