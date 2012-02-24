@@ -1,0 +1,17 @@
+{
+  "name": "Lowkick Tests",
+  "target": "results.json",
+  "version": "0.0.1",
+  "logs": "logs",
+
+  "environ": [
+    "node",
+    "ie6",
+    "ie7",
+    "ie8",
+    "firefox",
+    "webkit"
+  ],
+
+  "remote": "http://localhost:1315"
+}

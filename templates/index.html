@@ -20,6 +20,11 @@
     {{#scripts}}
     <script type="text/javascript" src="/scripts/{{ . }}"></script>
     {{/scripts}}
+
+    {{#sandboxScripts}}
+    <script type="text/javascript" src="/scripts/{{ . }}"></script>
+    {{/sandboxScripts}}
+
   </head>
   <body>
     <h1><span class='name'>{{ name }}</span><span class='rev'>{{ revision }}</span></h1>
@@ -48,6 +53,11 @@
         {{#scripts}}
         <li>{{ . }} <a href="/scripts/{{ . }}" class='url'>/static/{{ . }}</a></li>
         {{/scripts}}
+
+        {{#sandboxScripts}}
+        <li>{{ . }} <a href="/scripts/{{ . }}" class='url'>/static/{{ . }}</a></li>
+        {{/sandboxScripts}}
+
         <ul>
     </div>
 

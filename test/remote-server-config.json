@@ -1,0 +1,25 @@
+{
+  "name": "Lowkick Tests",
+  "version": "0.0.1",
+
+  "server": {
+    "host": "localhost",
+    "port": "1315"
+  },
+
+  "commands": {
+    "node": {
+      "driver": "node"
+    },
+
+    "ie8": {
+      "driver": "virtualbox-ie",
+      "vm": "ie8",
+      "url": "http://10.0.2.2:1315",
+      "username": "Administrator",
+      "password": "123456"
+    }
+    
+  }
+
+}

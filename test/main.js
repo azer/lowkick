@@ -248,6 +248,24 @@ function testServer(callback){
   });
 }
 
+function testRemote(callback){
+  var remote = require('./remote');
+  highkick({ module:remote, name:'remote', 'silent': false, 'ordered': true }, function(error, result){
+
+    if(error || result.fail>0){
+      lowkick.logging.error(error);
+      remote.end(function(){
+        callback(new Error('Remote tests were failed.'));
+      });
+      return;
+    }
+
+    report.reset(function(){
+      remote.end(callback);
+    });
+  });
+}
+
 module.exports = {
   'init': init,
   'testConfig': testConfig,
@@ -258,5 +276,6 @@ module.exports = {
   'testGetRevision': testGetRevision,
   'testSetRevision': testSetRevision,
   'testUserScripts': testUserScripts,
-  'testServer': testServer
+  'testServer': testServer,
+  'testRemote': testRemote
 }

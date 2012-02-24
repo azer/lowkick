@@ -6,7 +6,7 @@
     messages.push( (messages.length+1) + '. ' + msg );
     exports.display();
 
-    lowkick.api.post('message', { 'msg': msg }, callback);
+    lowkick.api.post('message', { 'msg': msg, 'sandbox': lowkick.sandbox() }, callback);
   };
 
   exports.get = function get(){
