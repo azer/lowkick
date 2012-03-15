@@ -34,7 +34,11 @@ var opt  = require('optimist'),
       .argv;
 
 function revision(){
-  lowkick.quiet();
+  !argv.verbose && !argv.quiet && lowkick.quiet();
+
+  var configFilename  = argv._[1];
+  configFilename && lowkick.config.filename(configFilename);
+
   lowkick.revision(puts);
 }
 
@@ -42,7 +46,6 @@ function verify(){
   !argv.verbose && !argv.quiet && lowkick.quiet();
 
   var configFilename  = argv._[1];
-
   configFilename && lowkick.config.filename(configFilename);
 
   lowkick.cli.verify();
@@ -50,7 +53,6 @@ function verify(){
 
 function publish(){
   var configFilename  = argv._[1];
-
   configFilename && lowkick.config.filename(configFilename);
 
   !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
