@@ -23,6 +23,20 @@ function init(options, callback){
   callback();
 }
 
+function gitrev(callback){
+  exec('git describe', function(error, stdout, stderr){
+    !error && stderr && ( error = new Error(stderr) );
+    
+    if(error){
+      callback(error);
+      return;
+    }
+
+    callback(undefined, stdout.replace(/\s|\n/g, ''));
+
+  });
+}
+
 function testConfig(callback){
   var cfg = config();
 
@@ -52,16 +66,25 @@ function testGetRevision(callback){
     revision(undefined);
 
     delete configdoc.revision;
+
+    gitrev(function(error, _rev){
     
-    revision(function(rev){
-      try {
-        assert.ok(rev.match(/^0\.0\.2/));
-      } catch(assertionError){
-        callback(assertionError);
+      if(error){
+        callback(error);
         return;
       }
-      
-      callback();
+
+      revision(function(rev){
+        try {
+          assert.equal(rev, _rev);
+        } catch(assertionError){
+          callback(assertionError);
+          return;
+        }
+        
+        callback();
+      });
+
     });
 
   });
@@ -77,16 +100,15 @@ function testSetRevision(callback){
 }
 
 function testGitDescription(callback){
-  exec('git describe', function(_error, _stdout, _stderr){
-    !_error && _stderr && ( _error = new Error(_stderr) );
-
-    revision.gitDescription(function(error, rev){
+  gitrev(function(_error, rev){
+    
+    revision.gitDescription(function(error, _rev){
       if(error && error.message != _error.message) { 
         callback(error);
         return;
       }
 
-      assert.equal(rev, _stdout.replace(/\s|\n/g, ''));
+      assert.equal(rev, _rev);
       callback();
     });
   });
