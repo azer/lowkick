@@ -28,7 +28,7 @@
 
   </head>
   <body>
-    <h1><span class='name'>{{ name }}</span><span class='rev'>{{ revision }}</span><span class='sandbox-name'></span></h1>
+    <h1><span class='name'>{{ name }}</span><span class='rev'>{{ revision }}</span></h1>
 
     <h2><span>Environment</span></h2>
     <div class='section'>
@@ -48,8 +48,9 @@
       <pre id="results">Loading results...</pre>
     </div>
 
-    <h2><span>Loaded Scripts</span></h2>
+    <h2><span>Loaded Scripts</span><span class='sandbox-name'></span></h2>
     <div class='section'>
+
       <ul class='scripts'>
         {{#scripts}}
         <li>{{ . }} <a href="/scripts/{{ . }}" class='url'>/static/{{ . }}</a></li>

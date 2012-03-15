@@ -32,3 +32,5 @@ a:hover { color:#ffcc00; text-decoration:underline; }
 .buttons .ok:hover { background:#007700; color:#ffcc00; }
 
 #messages { text-align:left; font:11px Arial, sans-serif; padding:10px 0; color:#626250; background:#141410; border-top:1px solid #181818; padding:10px 15px; width:580px; }
+
+.sandbox-name { padding: 5px 10px; background: #111; color:#848470; }
