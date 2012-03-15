@@ -1,7 +1,6 @@
 {
   "name": "Lowkick Test Server",
   "target": "results.json",
-  "version": "0.0.4",
   "logs": "logs",
 
   "environ": [
