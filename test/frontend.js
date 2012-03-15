@@ -27,13 +27,18 @@
   }
 
   function run(){
+    lowkick.signal('begin');
+
     lowkick.message('Running "testFailFn"');
     exports.testFailFn(function(){
       lowkick.message('Running "testOkFn"');
       exports.testOkFn(function(){
         lowkick.message("All frontend tests passed successfully.");
         lowkick.ok(function(){
-          if(lowkick.api.driver()){
+
+          lowkick.signal('end');
+
+          if(lowkick.driver()){ // FIXME
             lowkick.quit();
           }
         });

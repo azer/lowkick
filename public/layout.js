@@ -17,6 +17,10 @@
   };
 
   $(document).ready(function(){
+
+    var sandboxName = lowkick.sandbox();
+    $('.sandbox-name').html(sandboxName);
+
     $("#env").html(JSON.stringify(environ(), null, 4).replace(/\n/g, '<br />'));
 
     exports.results(function(error){
