@@ -123,7 +123,7 @@ function testResults(get, post, callback){
 }
 
 function testCommand(get, post, callback){
-  highkick({ module:require('./command'), name:'API Commands', 'silent': true, 'ordered':true, 'get': get, 'post': post }, function(error, result){
+  highkick({ module:require('./command'), name:'API Commands', 'silent': false, 'ordered':true, 'get': get, 'post': post }, function(error, result){
     if(result.fail>0){
       callback(new Error('Command tests were failed.'));
       return;

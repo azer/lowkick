@@ -22,6 +22,9 @@
   ],
 
   "commands": {
+    "shell": {
+      "driver": "shell"
+    },
     "node": {
       "driver": "node",
       "script": "test/run.js"

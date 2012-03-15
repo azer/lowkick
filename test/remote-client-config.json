@@ -13,5 +13,9 @@
     "webkit"
   ],
 
+  "scripts": [
+    "frontend.js"
+  ],
+
   "remote": "http://localhost:1315"
 }

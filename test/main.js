@@ -272,7 +272,7 @@ function testServer(callback){
 
 function testRemote(callback){
   var remote = require('./remote');
-  highkick({ module:remote, name:'remote', 'silent': false, 'ordered': true }, function(error, result){
+  highkick({ module:remote, name:'remote', 'silent': true, 'ordered': true }, function(error, result){
 
     if(error || result.fail>0){
       lowkick.logging.error(error);
