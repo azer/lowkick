@@ -1,6 +1,6 @@
 {
   "name": "lowkick",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simplifies running and verifying cross-browser tests on command-line.",
   "author": "Azer Koculu <azer@kodfabrik.com>",
   "keywords":["testing", "test"],
