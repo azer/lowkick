@@ -2,3 +2,4 @@ node_modules
 tmp
 test/logs
 test/tmp-logs
+npm-debug.log
