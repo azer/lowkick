@@ -10,7 +10,7 @@
         return;
       }
 
-      lowkick.message('Updating results...');
+      lowkick.messages.add('Updating results...');
       $("#results").html(JSON.stringify(results, null, 4).replace(/\n/g, "<br />"));
       callback && callback();
     });
@@ -25,7 +25,7 @@
 
     exports.results(function(error){
       if(error) throw error;
-      lowkick.message('Ready.');
+      lowkick.messages.add('Ready.');
     });
   });
 

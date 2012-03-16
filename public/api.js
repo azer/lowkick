@@ -41,11 +41,11 @@
   exports.post = post;
 
   exports.ok = function ok(environKeys, callback){
-    post('ok', { 'environ': environKeys }, callback);
+    post('ok', { 'environ': environKeys, 'sandbox': lowkick.sandbox() }, callback);
   };
 
   exports.fail = function fail(environKeys, callback){
-    post('fail', { 'environ': environKeys }, callback);
+    post('fail', { 'environ': environKeys, 'sandbox': lowkick.sandbox() }, callback);
   };
 
   exports.set = function set(results, callback){
