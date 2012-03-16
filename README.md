@@ -109,6 +109,8 @@ Download and add those following files to on top of the scripts defined your con
   * https://raw.github.com/pivotal/jasmine/master/lib/jasmine-core/jasmine-html.js
   * https://raw.github.com/gist/1645217/d49f09320feb1e64f77a0e31ae178573fdb6b1aa/gistfile1.js
 
+# Setting Up Remote Servers
+
 # Projects Using LowKick
 
   * [HighKick](http://github.com/azer/highkick)
