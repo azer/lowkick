@@ -9,7 +9,9 @@
         "navigator": true,
         "gecko": true,
         "chrome": true,
-        "dom": true
+        "dom": true,
+        "ie8": true,
+        "ie": true
     },
     "revision": "0.0.1",
     "ok": true,

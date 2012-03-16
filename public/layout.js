@@ -29,4 +29,10 @@
     });
   });
 
+  window.onerror = function onError(errorMsg, url, lineNumber){
+    lowkick.message(['Unexpected Error: ', errorMsg, url, lineNumber].join('\n    '), function(){
+      lowkick.signal('end');
+    });
+  };
+
 })(this.lowkick.layout = {});

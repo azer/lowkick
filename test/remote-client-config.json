@@ -1,6 +1,6 @@
 {
   "name": "Lowkick Tests",
-  "target": "results.json",
+  "target": "remote-client-results.json",
   "version": "0.0.1",
   "logs": "logs",
 
@@ -14,8 +14,8 @@
   ],
 
   "scripts": [
-    "frontend.js"
+    "remote-client-test.js"
   ],
 
-  "remote": "http://localhost:1315"
+  "remote": "http://127.0.0.1:1315"
 }

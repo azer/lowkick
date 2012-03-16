@@ -1,0 +1,9 @@
+{
+    "environ": {
+        "navigator": true,
+        "ie8": true,
+        "ie": true,
+        "dom": true
+    },
+    "revision": "0.0.1"
+}
