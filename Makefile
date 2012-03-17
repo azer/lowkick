@@ -4,6 +4,9 @@ publish:
 publish-remote-server:
 	@@node bin/lowkick publish test/remote-server-config.json
 
+remote-command:
+	@@node bin/lowkick command $(cmd) test/remote-client-config.json
+
 verify:
 	@@node bin/lowkick verify test/config.json
 

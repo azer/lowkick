@@ -12,6 +12,14 @@
       "driver": "node"
     },
 
+    "ie6": {
+      "driver": "virtualbox-ie",
+      "vm": "ie6",
+      "url": "http://10.0.2.2:1315",
+      "username": "Administrator",
+      "password": "123456"
+    },
+
     "ie8": {
       "driver": "virtualbox-ie",
       "vm": "ie8",
