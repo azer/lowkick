@@ -1,5 +1,5 @@
 {
-  "name": "Lowkick Tests",
+  "name": "Lowkick Remote Test Server",
   "version": "0.0.1",
 
   "server": {
@@ -8,13 +8,33 @@
   },
 
   "commands": {
-    "node": {
-      "driver": "node"
-    },
-
-    "ie6": {
+     "ie6": {
       "driver": "virtualbox-ie",
       "vm": "ie6",
+      "url": "http://10.0.2.2:1315",
+      "username": "Administrator",
+      "password": "123456"
+    },
+
+    "chrome": {
+      "driver": "virtualbox-chrome-win32",
+      "vm": "ie6",
+      "url": "http://10.0.2.2:1315",
+      "username": "Administrator",
+      "password": "123456"
+    },
+
+    "firefox": {
+      "driver": "virtualbox-firefox-win32",
+      "vm": "ie7",
+      "url": "http://10.0.2.2:1315",
+      "username": "Administrator",
+      "password": "123456"
+    },
+
+    "ie7": {
+      "driver": "virtualbox-ie",
+      "vm": "ie7",
       "url": "http://10.0.2.2:1315",
       "username": "Administrator",
       "password": "123456"
