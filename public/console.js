@@ -11,7 +11,7 @@
   };
 
   console.log = function lowkick_log_wrapper(){
-    proxy.apply(console, arguments);
+    proxy(Array.prototype.join.call(arguments, ' '));
     logger && logger.apply(console, arguments);
   };
 
