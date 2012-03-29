@@ -20,11 +20,13 @@ It abstracts the differences of varied platforms by defining [drivers](https://g
 
 
 See example configuration files:
+
   * [test/config.json](https://github.com/azer/lowkick/blob/master/test/config.json)
   * [test/remote-server-config.json](https://github.com/azer/lowkick/blob/master/test/remote-server-config.json)
   * [test/remote-client-config.json](https://github.com/azer/lowkick/blob/master/test/remote-client-config.json)
 
 And following screenshots:
+
   * https://p.twimg.com/Ai3M7nUCAAE6W26.png:large
 
 # First Steps
