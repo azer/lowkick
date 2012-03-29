@@ -1,5 +1,7 @@
 Simplifies executing JavaScript code on varied environments, from command-line. 
 
+[![](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)
+
 It aims to:
 
   * Publish JavaScript tests at a specified URL
