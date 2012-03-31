@@ -1,7 +1,7 @@
 !(function(exports, undefined){
 
   function get(path, callback){
-    $.ajax({
+    return $.ajax({
       cache: false,
       type: 'GET',
       url: '/api/'+path,
@@ -19,7 +19,7 @@
   }
 
   function post(path, data, callback){
-    $.ajax({
+    return $.ajax({
       cache: false,
       type: 'POST',
       url: '/api/'+path,
