@@ -9,6 +9,7 @@ var HELP = ['usage: lowkick [action] [options]'
          , '  verify     <config>              Verify current version of the tests. <config> is needed if there `pwd` doesn\'t contain a file named .lowkick'
          , '  publish    <config>              Start publishing tests. Default <results-file> value is lowkick-test-results.json'
          , '  command    <command> <config>    Run specified custom commmand. Custom commands are defined in the config file.'
+         , '  console    <server> <command>    Start JavaScript console upon specified LowKick server by running the given command.'
          , ''
          , 'options:'
          , '  quiet     Hide console messages'
@@ -61,13 +62,23 @@ function publish(){
 }
 
 function command(){
-  var configFilename  = argv._[2],
-      commandName = argv._[1];
+  var configFilename = argv._[2],
+      commandName    = argv._[1];
   
   configFilename && lowkick.config.filename(configFilename);
   !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
 
   lowkick.cli.command(commandName);
+}
+
+function console(){
+  var server      = argv._[1],
+      commandName = argv._[2];
+
+  !argv.verbose && !argv.quiet && lowkick.logging.setLevel('DEBUG');
+
+  lowkick.cli.console(server, commandName);
+
 }
 
 function version(){
@@ -93,6 +104,7 @@ switch(action){
   case 'verify': verify(); break;
   case 'publish': publish(); break;
   case 'command': command(); break;
+  case 'console': console(); break;
   default:
     if(argv.version){
       version();

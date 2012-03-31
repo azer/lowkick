@@ -1,4 +1,4 @@
-Simplifies executing JavaScript code on varied environments, from command-line. 
+Simplifies executing JavaScript code on varied environments, from command-line.
 
 [![](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)
 
@@ -19,7 +19,6 @@ $ npm install lowkick
 
 LowKick can be considered as a JavaScript server coming with several utilities and APIs that provide developers a unified way of JavaScript execution.
 It abstracts the differences of varied platforms by defining [drivers](https://github.com/azer/lowkick/tree/master/lib/drivers) and [commands](https://github.com/azer/lowkick/blob/master/test/config.json#L24).
-
 
 See example configuration files:
 
@@ -76,8 +75,8 @@ If you have a VirtualBox VM named "ie6" (ie7 or ie8 counts, as well) on your sys
 $ make test-ie6 # equivalent of "lowkick command ie6 test/config.json"
 ```
 
-First question came to your mind is probably "Does LowKick provide these commands?", the answer is no. 
-Commands are defined in config files. Which means, you can edit the IE command above if it doesn't work for you. 
+First question came to your mind is probably "Does LowKick provide these commands?", the answer is no.
+Commands are defined in config files. Which means, you can edit the IE command above if it doesn't work for you.
 
 ## Defining Commands
 
@@ -110,8 +109,8 @@ details that can be seen below;
 FIX ME
 
 # Working with Test Frameworks
-LowKick itself is not a test framework and doesn't provide anything test frameworks already accomplish. 
-It aims to let developers run all kind of tests on varied environments, from command-line. 
+LowKick itself is not a test framework and doesn't provide anything test frameworks already accomplish.
+It aims to let developers run all kind of tests on varied environments, from command-line.
 
 ## Jasmine
 

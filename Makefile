@@ -13,6 +13,12 @@ verify:
 cmd:
 	@@node bin/lowkick command $(cmd) test/config.json
 
+console-ie8:
+	node bin/lowkick console http://127.0.0.1:1315 ie8
+
+console-chrome:
+	node bin/lowkick console http://127.0.0.1:1315 chrome
+
 test-ie6:
 	node bin/lowkick command ie6 test/config.json
 

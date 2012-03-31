@@ -10,7 +10,7 @@
     try {
       output = eval(entry.script);
     } catch(err) {
-      output = err;
+      output = err.stack || err.message || err;
     }
 
     lowkick.api.post( URI + entry.id, { 'output': output });
@@ -19,6 +19,10 @@
   function subscribe(){
     var i, entry;
     (function loop(error, response){
+
+      if(error){
+        return;
+      }
       
       if(response && response.io){
         i = response.io.length;

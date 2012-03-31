@@ -3,6 +3,14 @@
   <head>
     <title>{{ name }} {{ revision }} - LowKick</title>
     <link rel='stylesheet' href='/static/style.css'></link>
+
+    <!--[if IE]>
+    <script>
+      JSON = (function(u){ return u; })();
+    </script>
+    <script type="text/javascript" src="/static/json2.js"></script>
+    <![endif]-->
+
     <script type="text/javascript" src="/static/jquery.js"></script>
     <script type="text/javascript" src="/static/environ.js"></script>
     <script type="text/javascript" src="/static/lowkick.js"></script>
@@ -12,13 +20,6 @@
     <script type="text/javascript" src="/static/layout.js"></script>
     <script type="text/javascript" src="/static/io.js"></script>
     <script type="text/javascript" src="/static/console.js"></script>
-
-    <!--[if IE]>
-    <script>
-      JSON = (function(u){ return u; })();
-    </script>
-    <script type="text/javascript" src="/static/json2.js"></script>
-    <![endif]-->
 
     {{#scripts}}
     <script type="text/javascript" src="/scripts/{{ . }}"></script>
