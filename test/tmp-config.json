@@ -11,7 +11,8 @@
     "ie9",
     "firefox",
     "webkit",
-    "opera"
+    "opera",
+    "node"
   ],
 
   "scripts":[

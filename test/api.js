@@ -47,7 +47,6 @@ function testOk(get, post, callback){
     report.results(function(error, results){
       if(error) return callback(error);
 
-      assert.ok(results.environ.v8);
       assert.ok(results.environ.node);
       
       callback();

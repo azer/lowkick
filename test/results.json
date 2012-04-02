@@ -1,17 +1,8 @@
 {
     "environ": {
         "node": true,
-        "bar": true,
-        "foo": true,
-        "v8": true,
         "webkit": true,
-        "safari": true,
-        "navigator": true,
-        "gecko": true,
-        "chrome": true,
-        "dom": true,
-        "ie8": true,
-        "ie": true
+        "ie8": true
     },
     "revision": "0.0.5-9-g425e6f6",
     "ok": true,

@@ -45,7 +45,7 @@ function testConfig(callback){
   assert.equal(cfg.server.host, 'localhost');
   assert.equal(cfg.server.port, '1315');
   
-  assert.equal(cfg.environ.length, 7);
+  assert.equal(cfg.environ.length, 8);
   assert.equal(cfg.environ[0], 'ie6');
   assert.equal(cfg.environ[6], 'opera');
 
