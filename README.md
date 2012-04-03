@@ -2,15 +2,6 @@ Simplifies executing JavaScript code on varied environments, from command-line.
 
 [![](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)](https://github.com/downloads/azer/lowkick/lowkick_http_ie8.png)
 
-
-
-It aims to:
-
-  * Publish JavaScript tests at a specified URL
-  * Run the tests through drivers (VMs, Remote Machines etc)
-  * Provide test frameworks an API to save test results
-  * Let developers setup remote test servers
-
 # Install
 
 ```bash
@@ -19,7 +10,7 @@ $ npm install lowkick
 
 # Concept
 
-LowKick can be considered as a JavaScript server coming with several utilities and APIs that provide developers a unified way of JavaScript execution.
+LowKick can be considered as a JavaScript evaluation server coming with several utilities and APIs that provide developers a unified way of JavaScript execution.
 It abstracts the differences of varied platforms by defining [drivers](https://github.com/azer/lowkick/tree/master/lib/drivers) and [commands](https://github.com/azer/lowkick/blob/master/test/config.json#L24).
 
 [![](https://github.com/downloads/azer/lowkick/lowkick_console.png)](https://github.com/downloads/azer/lowkick/lowkick_console.png)
