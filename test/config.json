@@ -17,6 +17,10 @@
     "port": "1314"
   },
 
+  "static":{
+    "fruits":"./fruits"
+  },
+
   "scripts":[
     "frontend.js"
   ],
