@@ -5,7 +5,7 @@ var assert  = require('assert'),
 
     fs      = require('fs'),
     path    = require('path'),
-    exists  = path.existsSync,
+    exists  = fs.existsSync,
     join    = path.join,
     dirname = path.dirname;
 
